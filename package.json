@@ -1,4 +1,5 @@
 {
+  "homepage": "http://ankitkr8540.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -23,7 +24,6 @@
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://ankitkr8540.github.io/ankit-portfolio",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
