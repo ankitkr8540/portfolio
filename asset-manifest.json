@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9544b43a.css",
+    "main.js": "/portfolio/static/js/main.c000fe3c.js",
+    "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
+    "static/media/home_bg.mp4": "/portfolio/static/media/home_bg.32a1a34e406bd5b6e1ad.mp4",
+    "static/media/Basta_preview.png": "/portfolio/static/media/Basta_preview.609d1339907fa6a553cd.png",
+    "static/media/cover-letter-generator.jpeg": "/portfolio/static/media/cover-letter-generator.771cd76be8ed7bce4823.jpeg",
+    "static/media/about.png": "/portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/Ankit-Kumar-Resume.pdf": "/portfolio/static/media/Ankit-Kumar-Resume.ac988362299e3c3409a4.pdf",
+    "static/media/Ankit_cat.png": "/portfolio/static/media/Ankit_cat.8b6341db89c0adbace38.png",
+    "static/media/developer.png": "/portfolio/static/media/developer.26dadaebe7f30dcddc53.png",
+    "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/portfolio/index.html",
+    "main.9544b43a.css.map": "/portfolio/static/css/main.9544b43a.css.map",
+    "main.c000fe3c.js.map": "/portfolio/static/js/main.c000fe3c.js.map",
+    "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9544b43a.css",
+    "static/js/main.c000fe3c.js"
+  ]
+}
