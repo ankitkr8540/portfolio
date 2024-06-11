@@ -1,25 +1,18 @@
-import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiFirebase,
-  SiNextdotjs,
-} from "react-icons/si";
+import React from 'react'
+import { Col, Row } from 'react-bootstrap'
+import { CgCPlusPlus } from 'react-icons/cg'
+import { DiJavascript1, DiReact, DiNodejs, DiMongodb, DiPython, DiGit, DiJava } from 'react-icons/di'
+import { SiFirebase, SiNextdotjs, SiSnowflake } from 'react-icons/si'
+import { SiStreamlit } from 'react-icons/si'
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="streamlit">
+        <SiStreamlit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
@@ -34,9 +27,6 @@ function Techstack() {
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -48,8 +38,11 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSnowflake />
+      </Col>
     </Row>
-  );
+  )
 }
 
-export default Techstack;
+export default Techstack
