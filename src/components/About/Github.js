@@ -39,7 +39,7 @@ function Github() {
           color="#c084f5"
           fontSize={16}
           theme={theme}
-          style={{ maxWidth: '1080px' }}
+          style={{ maxWidth: '1100px' }}
         />
       </Row>
     </>
