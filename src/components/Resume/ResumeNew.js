@@ -28,7 +28,7 @@ const ResumeNew = () => {
             onSelect={(k) => setKey(k)}
             className="mb-3 justify-content-center d-flex custom-tabs border-0"
           >
-            <Tab eventKey="software" title="Software Development" className="border-0">
+            <Tab eventKey="software" title="Software Development Resume">
               <Button variant="primary" href={pdfSoftware} target="_blank" style={{ maxWidth: '250px' }}>
                 <AiOutlineDownload />
                 &nbsp;Download Software Development CV
@@ -46,7 +46,7 @@ const ResumeNew = () => {
                 </Button>
               </Row>
             </Tab>
-            <Tab eventKey="data" title="Data Scientist">
+            <Tab eventKey="data" title="Data Scientist Resume">
               <Button variant="primary" href={pdfDataScientist} target="_blank" style={{ maxWidth: '250px' }}>
                 <AiOutlineDownload />
                 &nbsp;Download Data Scientist CV
