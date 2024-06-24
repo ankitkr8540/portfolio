@@ -29,11 +29,6 @@ const ResumeNew = () => {
             className="mb-3 justify-content-center d-flex custom-tabs border-0"
           >
             <Tab eventKey="software" title="Software Development Resume">
-              <Button variant="primary" href={pdfSoftware} target="_blank" style={{ maxWidth: '250px' }}>
-                <AiOutlineDownload />
-                &nbsp;Download CV
-              </Button>
-
               <Row className="resume">
                 <Document file={pdfSoftware} className="d-flex justify-content-center">
                   <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
@@ -47,11 +42,6 @@ const ResumeNew = () => {
               </Row>
             </Tab>
             <Tab eventKey="data" title="Data Scientist Resume">
-              <Button variant="primary" href={pdfDataScientist} target="_blank" style={{ maxWidth: '250px' }}>
-                <AiOutlineDownload />
-                &nbsp;Download CV
-              </Button>
-
               <Row className="resume">
                 <Document file={pdfDataScientist} className="d-flex justify-content-center">
                   <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
