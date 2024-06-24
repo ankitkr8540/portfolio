@@ -19,8 +19,8 @@ const ResumeNew = () => {
 
   return (
     <div>
-      <Container fluid className="resume-section">
-        <Particle />
+      <Particle />
+      <Container className="resume-section">
         <Row style={{ justifyContent: 'center', position: 'relative' }}>
           <Tabs
             id="resume-tabs"
