@@ -850,3 +850,53 @@ button:focus {
     background-position: -400px -1200px;
   }
 }
+
+.custom-tabs .nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+.custom-tabs .nav-link {
+  position: relative;
+  width: 100%;
+  padding: 10px 0; /* Adjust padding as needed */
+  background-color: transparent; /* Consistent background color for tabs */
+  color: white; /* Consistent font color for tabs */
+  border: none !important; /* Removes default border */
+  overflow: hidden; /* Enables the border animation effect */
+}
+
+.custom-tabs .nav-link.active,
+.custom-tabs .nav-link:hover {
+  color: white !important; /* Highlight color for active/hover state */
+}
+
+.custom-tabs .nav-link.active {
+  background-color: transparent !important; /* Active tab background */
+  border-radius: 24px; /* Rounded corners for the active tab */
+  border: 1px solid #c95bf5 !important; /* Active tab border color */
+}
+
+.custom-tabs .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0; /* Position it to the right */
+  height: 100%;
+  width: 100%; /* Full width, but will be clipped */
+  background: transparent; /* Initially transparent */
+  border-top: 1px solid #c95bf5; /* Top border */
+  border-right: 1px solid #c95bf5; /* Right border */
+  border-bottom: 1px solid #c95bf5; /* Bottom border */
+  border-left: none; /* No left border */
+  border-radius: 24px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: scaleX(0); /* Initially scaled to 0 */
+  transform-origin: left; /* Scale from the right */
+}
+
+.custom-tabs .nav-link:hover::before {
+  background-color: transparent; /* Keep it transparent or set to a color if needed */
+  transform: scaleX(1); /* Scale to full width on hover */
+}
