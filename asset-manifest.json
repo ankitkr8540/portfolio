@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.449561cc.css",
-    "main.js": "/portfolio/static/js/main.07a89e5d.js",
+    "main.css": "/portfolio/static/css/main.f8ebe05d.css",
+    "main.js": "/portfolio/static/js/main.280c5cf0.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/home_bg.mp4": "/portfolio/static/media/home_bg.32a1a34e406bd5b6e1ad.mp4",
     "static/media/full-stack-developers.gif": "/portfolio/static/media/full-stack-developers.51d546ae254659680e11.gif",
     "static/media/Basta_preview.png": "/portfolio/static/media/Basta_preview.609d1339907fa6a553cd.png",
     "static/media/cover-letter-generator.jpeg": "/portfolio/static/media/cover-letter-generator.771cd76be8ed7bce4823.jpeg",
     "static/media/leetcode-previewed.jpeg": "/portfolio/static/media/leetcode-previewed.24a8d1ddcddb14677f1f.jpeg",
-    "static/media/Ankit-Kumar-Resume.pdf": "/portfolio/static/media/Ankit-Kumar-Resume.ac988362299e3c3409a4.pdf",
+    "static/media/Project_Assistant_Resume_Ankit.pdf": "/portfolio/static/media/Project_Assistant_Resume_Ankit.f2f6ac6bc34e17da3fce.pdf",
+    "static/media/Ankit-Kumar_Sp_24.pdf": "/portfolio/static/media/Ankit-Kumar_Sp_24.582dc4ea0f42bace0547.pdf",
     "static/media/Ankit_cat.png": "/portfolio/static/media/Ankit_cat.8b6341db89c0adbace38.png",
     "static/media/developer.png": "/portfolio/static/media/developer.26dadaebe7f30dcddc53.png",
     "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/portfolio/index.html",
-    "main.449561cc.css.map": "/portfolio/static/css/main.449561cc.css.map",
-    "main.07a89e5d.js.map": "/portfolio/static/js/main.07a89e5d.js.map",
+    "main.f8ebe05d.css.map": "/portfolio/static/css/main.f8ebe05d.css.map",
+    "main.280c5cf0.js.map": "/portfolio/static/js/main.280c5cf0.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.449561cc.css",
-    "static/js/main.07a89e5d.js"
+    "static/css/main.f8ebe05d.css",
+    "static/js/main.280c5cf0.js"
   ]
 }
