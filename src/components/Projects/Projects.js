@@ -5,6 +5,7 @@ import Particle from '../Particle'
 import Basta from '../../Assets/Basta_preview.png'
 import clg from '../../Assets/cover-letter-generator.jpeg'
 import leetcode from '../../Assets/leetcode-previewed.jpeg'
+import vscode from '../../Assets/vscode.jpeg'
 
 function Projects() {
   return (
@@ -44,6 +45,16 @@ function Projects() {
               description="It is an npm package that generates a calendar of Leetcode problems based on the user's preferences. It is built using Node.js and is published on npm."
               ghLink="https://github.com/ankitkr8540/leetcode-calendar"
               demoLink="https://www.npmjs.com/package/leetcode-calendar"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={vscode}
+              isBlog={false}
+              title="VS Code Extension - Workspace Archiver"
+              description="It is a VS Code extension that helps in archiving the workspace. It creates a copy of the whole project in a workspaceArchiver.txt and saves it in the project location. It is published on the VS Code marketplace."
+              ghLink="https://github.com/ankitkr8540/workspace-archiver"
+              demoLink="https://marketplace.visualstudio.com/items?itemName=AnkitKumar.workspace-archiver"
             />
           </Col>
         </Row>
