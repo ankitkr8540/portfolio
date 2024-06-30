@@ -4,6 +4,7 @@ import { CgCPlusPlus } from 'react-icons/cg'
 import { DiJavascript1, DiReact, DiNodejs, DiMongodb, DiPython, DiGit, DiJava, DiIonic } from 'react-icons/di'
 import {
   SiAngularjs,
+  SiChartdotjs,
   SiExpress,
   SiFirebase,
   SiNextdotjs,
@@ -44,6 +45,10 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons" title="Ionic Framework">
         <DiIonic />
         <div className="tech-name">Ionic Framework</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" title="Next js">
+        <SiChartdotjs />
+        <div className="tech-name">Chart js</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons" title="CSS">
         <FaCss3 />
