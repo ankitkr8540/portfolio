@@ -900,3 +900,9 @@ button:focus {
   background-color: transparent; /* Keep it transparent or set to a color if needed */
   transform: scaleX(1); /* Scale to full width on hover */
 }
+
+.tech-name {
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+}
