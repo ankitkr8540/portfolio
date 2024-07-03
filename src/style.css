@@ -245,16 +245,6 @@ button:focus {
   padding-top: 80px !important;
 }
 
-/* .home-section {
-  position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
-} */
-
 .home-section {
   position: relative;
   z-index: -1;
@@ -805,21 +795,6 @@ button:focus {
 .move {
   animation: move-animation 25s infinite;
 }
-
-/* .walking {
-  animation: walk-animation 2s steps(12) infinite;
-  background: url('../src/Assets/cat_tiles.png') 0 0 no-repeat;
-}
-
-.sitting {
-  animation: sit-animation 2s steps(6) infinite;
-  background: url('../src/Assets/cat_tiles.png') 0 0 no-repeat;
-}
-
-.walk-then-sit {
-  animation: walk-animation 2s steps(12) 1, sit-animation 3s 2s steps(6) 1;
-  background: url('../src/Assets/cat_tiles.png') 0 0 no-repeat;
-} */
 
 @keyframes walk-animation {
   from {
