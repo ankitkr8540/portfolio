@@ -19,6 +19,25 @@ function Projects() {
         <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={vscode}
+              isBlog={false}
+              title="Few-Shot Learning: Reproducibility Study"
+              description="Conducted comprehensive research on Pattern-Exploiting Training (PET) for few-shot text classification, implementing and validating the framework using RoBERTa. Enhanced the original implementation with novel pattern contextualization and domain-specific optimizations, while pioneering a thorough analysis of model robustness under various perturbation types. Research demonstrates improved training efficiency and provides insights into model behavior in low-resource scenarios."
+              ghLink="https://github.com/StringAna/PET_Reproducibility_Study"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={vscode}
+              isBlog={false}
+              title="PyLinguist: Intelligent Code Translation"
+              description="Developed an innovative code translation framework that leverages multiple large language models and custom keyword mapping techniques. Built a sophisticated pipeline combining various AI models (GPT-4, Claude, DeepseekAI) with the Google Translate API for robust Python code translation. Implemented comprehensive evaluation mechanisms to ensure preservation of code functionality and semantic meaning across languages."
+              ghLink="https://github.com/ankitkr8540/pylinguist-paper"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Basta}
               isBlog={false}
               title="Basta E-commerce Shopping App"
