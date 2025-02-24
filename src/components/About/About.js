@@ -6,6 +6,7 @@ import Techstack from './Techstack'
 import Aboutcard from './AboutCard'
 import laptopImg from '../../Assets/full-stack-developers.gif'
 import Toolstack from './Toolstack'
+import Certification from './Certification'
 
 function About() {
   return (
@@ -40,6 +41,10 @@ function About() {
           <strong className="purple">Tools</strong> I use
         </h1>
         <Toolstack />
+        <h1 className="project-heading">
+          <strong className="purple">Certifications</strong>
+        </h1>
+        <Certification />
 
         <Github />
       </Container>
