@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3804f8ff.css",
-    "main.js": "/portfolio/static/js/main.9d3881d0.js",
+    "main.js": "/portfolio/static/js/main.3289d7d6.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/home_bg.mp4": "/portfolio/static/media/home_bg.32a1a34e406bd5b6e1ad.mp4",
     "static/media/full-stack-developers.gif": "/portfolio/static/media/full-stack-developers.51d546ae254659680e11.gif",
@@ -12,15 +12,16 @@
     "static/media/Ankit_MLE_Resume.pdf": "/portfolio/static/media/Ankit_MLE_Resume.5a0a5532b92d78f1d4da.pdf",
     "static/media/Ankit_cat.png": "/portfolio/static/media/Ankit_cat.8b6341db89c0adbace38.png",
     "static/media/AWS-Dev.png": "/portfolio/static/media/AWS-Dev.da9861980f5b9d7004a6.png",
+    "static/media/aws-MLE-associate.png": "/portfolio/static/media/aws-MLE-associate.95e8d2a33f3c989bc419.png",
     "static/media/developer.png": "/portfolio/static/media/developer.26dadaebe7f30dcddc53.png",
     "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/portfolio/index.html",
     "main.3804f8ff.css.map": "/portfolio/static/css/main.3804f8ff.css.map",
-    "main.9d3881d0.js.map": "/portfolio/static/js/main.9d3881d0.js.map",
+    "main.3289d7d6.js.map": "/portfolio/static/js/main.3289d7d6.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3804f8ff.css",
-    "static/js/main.9d3881d0.js"
+    "static/js/main.3289d7d6.js"
   ]
 }
