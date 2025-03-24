@@ -163,7 +163,7 @@ function Contact() {
                   name='subject'
                   value={formData.subject}
                   onChange={handleChange}
-                  placeholder='Enter your full name'
+                  placeholder='Enter the subject of your message'
                 />
                 <Form.Control.Feedback type='invalid'>
                   Please provide a subject.
