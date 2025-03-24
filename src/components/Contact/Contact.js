@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Col, Container, Row, Form, Button, Alert } from 'react-bootstrap';
 import Particle from '../Particle';
 import './Contact.css'; // Make sure to create this CSS file
 import emailjs from '@emailjs/browser';
+import { FcCalendar } from 'react-icons/fc';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -64,6 +65,26 @@ function Contact() {
     setValidated(false);
   };
 
+  useEffect(() => {
+    // Add Calendly script
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    // Add Calendly stylesheet
+    const link = document.createElement('link');
+    link.href = 'https://assets.calendly.com/assets/external/widget.css';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+
+    return () => {
+      // Clean up on unmount
+      document.body.removeChild(script);
+      document.head.removeChild(link);
+    };
+  }, []);
+
   return (
     <Container fluid className='contact-section'>
       <Particle />
@@ -98,6 +119,26 @@ function Contact() {
                 Cloud Architecture
               </div>
             </div>
+            <Button
+              variant='primary'
+              className='submit-btn mt-4'
+              style={{
+                backgroundColor: '#4B0082',
+                border: 'none',
+                padding: '12px 30px',
+                width: '70%',
+                marginTop: '20px',
+              }}
+              onClick={() => {
+                window.Calendly.initPopupWidget({
+                  url: 'https://calendly.com/akumar37-gmu/30min?hide_landing_page_details=1&hide_gdpr_banner=1',
+                });
+                return false;
+              }}
+            >
+              <FcCalendar style={{ marginRight: '8px' }} />
+              Schedule a 30-minute call directly
+            </Button>
           </Col>
 
           <Col md={6} className='contact-form-wrapper'>

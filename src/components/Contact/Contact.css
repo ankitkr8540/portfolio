@@ -22,6 +22,7 @@
 }
 .contact-about {
   align-content: center;
+  z-index: 1;
 }
 
 .contact-about h3 {
