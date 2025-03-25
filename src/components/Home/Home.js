@@ -73,16 +73,6 @@ function Home() {
                   <ul className='home-about-social-links'>
                     <li className='social-icons'>
                       <a
-                        href='https://github.com/ankitkr8540'
-                        target='_blank'
-                        rel='noreferrer'
-                        className='icon-colour  home-social-icons'
-                      >
-                        <AiFillGithub />
-                      </a>
-                    </li>
-                    <li className='social-icons'>
-                      <a
                         href='https://www.linkedin.com/in/027kumarankit/'
                         target='_blank'
                         rel='noreferrer'
@@ -90,6 +80,16 @@ function Home() {
                         text='LinkedIn'
                       >
                         <FaLinkedinIn />
+                      </a>
+                    </li>
+                    <li className='social-icons'>
+                      <a
+                        href='https://github.com/ankitkr8540'
+                        target='_blank'
+                        rel='noreferrer'
+                        className='icon-colour  home-social-icons'
+                      >
+                        <AiFillGithub />
                       </a>
                     </li>
                   </ul>
