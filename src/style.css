@@ -760,7 +760,6 @@ button:focus {
   background: whitesmoke;
   border-radius: 50%;
   position: absolute;
-  margin: 50px 0 0 100px;
   animation: shine 5s ease-in-out infinite;
 }
 .moon-positioning {
