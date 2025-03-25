@@ -1,9 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b09068fb.css",
-    "main.js": "/portfolio/static/js/main.0450eae1.js",
+    "main.css": "/portfolio/static/css/main.95eed8f6.css",
+    "main.js": "/portfolio/static/js/main.66909404.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
-    "static/media/home_bg.mp4": "/portfolio/static/media/home_bg.32a1a34e406bd5b6e1ad.mp4",
     "static/media/full-stack-developers.gif": "/portfolio/static/media/full-stack-developers.51d546ae254659680e11.gif",
     "static/media/vscode.jpeg": "/portfolio/static/media/vscode.e65f0039af3f57df02c2.jpeg",
     "static/media/Basta_preview.png": "/portfolio/static/media/Basta_preview.609d1339907fa6a553cd.png",
@@ -17,12 +16,12 @@
     "static/media/developer.png": "/portfolio/static/media/developer.26dadaebe7f30dcddc53.png",
     "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/portfolio/index.html",
-    "main.b09068fb.css.map": "/portfolio/static/css/main.b09068fb.css.map",
-    "main.0450eae1.js.map": "/portfolio/static/js/main.0450eae1.js.map",
+    "main.95eed8f6.css.map": "/portfolio/static/css/main.95eed8f6.css.map",
+    "main.66909404.js.map": "/portfolio/static/js/main.66909404.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b09068fb.css",
-    "static/js/main.0450eae1.js"
+    "static/css/main.95eed8f6.css",
+    "static/js/main.66909404.js"
   ]
 }
