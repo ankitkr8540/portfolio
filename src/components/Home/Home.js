@@ -60,7 +60,7 @@ function Home() {
                     fontSize: '20px',
                     border: 'none',
                     padding: '12px 30px',
-                    width: '30%',
+                    width: '50%',
                     justifySelf: 'center',
                   }}
                   onClick={() => (window.location.href = '#/contact')}
