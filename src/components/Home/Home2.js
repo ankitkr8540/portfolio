@@ -8,6 +8,7 @@ import {
   AiFillInstagram,
 } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
+import Testimonials from './Testimonials';
 
 function Home2() {
   return (
@@ -56,6 +57,14 @@ function Home2() {
               </i>
               <br />
             </p>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={12}>
+            <h1 style={{ fontSize: '2em', paddingTop: '70px', color: 'white' }}>
+              MY <span className='purple'>REPUTATION</span> AT WORK
+            </h1>
+            <Testimonials />
           </Col>
         </Row>
         <Row>
