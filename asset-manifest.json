@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.474b3d24.css",
-    "main.js": "/portfolio/static/js/main.eb12147f.js",
+    "main.css": "/portfolio/static/css/main.8984d60c.css",
+    "main.js": "/portfolio/static/js/main.2b84ba9f.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/full-stack-developers.gif": "/portfolio/static/media/full-stack-developers.51d546ae254659680e11.gif",
     "static/media/vscode.jpeg": "/portfolio/static/media/vscode.e65f0039af3f57df02c2.jpeg",
@@ -11,17 +11,20 @@
     "static/media/Ankit image.jpg": "/portfolio/static/media/Ankit image.b1f2f507bf137d538738.jpg",
     "static/media/leetcode-previewed.jpeg": "/portfolio/static/media/leetcode-previewed.24a8d1ddcddb14677f1f.jpeg",
     "static/media/Ankit_cat.png": "/portfolio/static/media/Ankit_cat.8b6341db89c0adbace38.png",
+    "static/media/parul.jpeg": "/portfolio/static/media/parul.7fa9fc54d57976bdc2bf.jpeg",
     "static/media/AWS-Dev.png": "/portfolio/static/media/AWS-Dev.da9861980f5b9d7004a6.png",
+    "static/media/Aileen.jpeg": "/portfolio/static/media/Aileen.a9ec09d1393c714b779a.jpeg",
     "static/media/aws-MLE-associate.png": "/portfolio/static/media/aws-MLE-associate.95e8d2a33f3c989bc419.png",
+    "static/media/Alexandra.jpeg": "/portfolio/static/media/Alexandra.5f58df7a921926c209de.jpeg",
     "static/media/developer.png": "/portfolio/static/media/developer.26dadaebe7f30dcddc53.png",
     "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/portfolio/index.html",
-    "main.474b3d24.css.map": "/portfolio/static/css/main.474b3d24.css.map",
-    "main.eb12147f.js.map": "/portfolio/static/js/main.eb12147f.js.map",
+    "main.8984d60c.css.map": "/portfolio/static/css/main.8984d60c.css.map",
+    "main.2b84ba9f.js.map": "/portfolio/static/js/main.2b84ba9f.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.474b3d24.css",
-    "static/js/main.eb12147f.js"
+    "static/css/main.8984d60c.css",
+    "static/js/main.2b84ba9f.js"
   ]
 }
