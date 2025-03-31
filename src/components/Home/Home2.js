@@ -25,36 +25,51 @@ function Home2() {
               LET ME <span className='purple'> INTRODUCE </span> MYSELF
             </h1>
             <p className='home-about-body'>
-              Hi! I'm Ankit, a passionate programmer with a love for creating
-              websites incorporating Machine Learning concepts and working on
-              innovative projects.
+              Hello! I'm Ankit, a{' '}
+              <b className='purple'>machine learning engineer</b> who translates
+              complex data patterns into actionable intelligence.
               <br />
               <br />
-              My journey began with full-stack development at Accenture, and
-              I've since expanded my expertise to include Machine Learning and
-              Data Mining.
+              My professional journey began at Accenture where I engineered{' '}
+              <b className='purple'>
+                hybrid financial forecasting systems
+              </b>{' '}
+              that combined <b className='purple'>LSTM</b>,{' '}
+              <b className='purple'>XGBoost</b>, and{' '}
+              <b className='purple'>SARIMA models</b> to deliver{' '}
+              <b className='purple'>explainable predictions</b> for
+              institutional clients.
               <br />
               <br />
-              My focus is on delivering clean and efficient solutions, and I
-              thrive on simplicity and effectiveness in my work.
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className='purple'> C++, Javascript and Python</b>
-              </i>
+              Currently completing my Master's in Computer Science at GMU with a{' '}
+              <b className='purple'>3.93 GPA</b>, I've focused on developing
+              novel approaches to <b className='purple'>few-shot learning</b>{' '}
+              and <b className='purple'>cross-lingual NLP</b>.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className='purple'>
-                  {' '}
-                  projects incorporting Machine Learning with the Web
-                  Technologies{' '}
-                </b>{' '}
-                and also whenever possible I try to keep myself updated with the
-                Web Technologies and also try to explore different hackathons
-                related to <b className='purple'>Machine Learning and AI</b>
-              </i>
+              I'm certified as an{' '}
+              <b className='purple'>AWS Developer Associate</b> and{' '}
+              <b className='purple'>AWS Machine Learning Engineer Associate</b>,
+              validating my expertise in cloud-based ML implementations.
+              <br />
+              <br />I find satisfaction in architecting{' '}
+              <b className='purple'>end-to-end ML systems</b>—from my{' '}
+              <b className='purple'>AWS-powered RAG implementation</b> in
+              UniConnect to optimizing{' '}
+              <b className='purple'>distributed recommendation engines</b> with{' '}
+              <b className='purple'>PySpark</b>.
+              <br />
+              <br />
+              When I'm not fine-tuning models or engineering{' '}
+              <b className='purple'>data pipelines</b>, you'll find me
+              organizing workshops for GMU's{' '}
+              <b className='purple'>Google Developer Group</b>, helping build
+              our campus <b className='purple'>AI community</b> from the ground
+              up.
+              <br />
+              <br />
+              Let's connect and explore how machine learning can solve
+              meaningful problems!
               <br />
             </p>
           </Col>
