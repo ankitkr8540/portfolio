@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8984d60c.css",
-    "main.js": "/portfolio/static/js/main.c0ab389c.js",
+    "main.js": "/portfolio/static/js/main.2efe1adb.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/full-stack-developers.gif": "/portfolio/static/media/full-stack-developers.51d546ae254659680e11.gif",
     "static/media/vscode.jpeg": "/portfolio/static/media/vscode.e65f0039af3f57df02c2.jpeg",
     "static/media/Basta_preview.png": "/portfolio/static/media/Basta_preview.609d1339907fa6a553cd.png",
-    "static/media/Ankit_MLE_Resume.pdf": "/portfolio/static/media/Ankit_MLE_Resume.356d4d156177fdfd58c2.pdf",
+    "static/media/Ankit_MLE_Resume.pdf": "/portfolio/static/media/Ankit_MLE_Resume.4a94a2d4f155af81744a.pdf",
     "static/media/cover-letter-generator.jpeg": "/portfolio/static/media/cover-letter-generator.771cd76be8ed7bce4823.jpeg",
     "static/media/Ankit image.jpg": "/portfolio/static/media/Ankit image.b1f2f507bf137d538738.jpg",
     "static/media/leetcode-previewed.jpeg": "/portfolio/static/media/leetcode-previewed.24a8d1ddcddb14677f1f.jpeg",
@@ -20,11 +20,11 @@
     "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/portfolio/index.html",
     "main.8984d60c.css.map": "/portfolio/static/css/main.8984d60c.css.map",
-    "main.c0ab389c.js.map": "/portfolio/static/js/main.c0ab389c.js.map",
+    "main.2efe1adb.js.map": "/portfolio/static/js/main.2efe1adb.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8984d60c.css",
-    "static/js/main.c0ab389c.js"
+    "static/js/main.2efe1adb.js"
   ]
 }
