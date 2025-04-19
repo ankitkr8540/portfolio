@@ -8,11 +8,20 @@ import './Testimonials.css';
 import testimonial1 from '../../Assets/Aileen.jpeg';
 import testimonial2 from '../../Assets/Alexandra.jpeg';
 import testimonial3 from '../../Assets/parul.jpeg';
+import testimonial4 from '../../Assets/Rob.jpeg';
 
 function Testimonials() {
   const testimonials = [
     {
       id: 1,
+      name: 'Robert Faber',
+      LinkedIn: 'https://www.linkedin.com/in/robert-faber-a793646/',
+      designation: 'Program Director at George Mason University',
+      image: testimonial4,
+      text: "Ankit was hired into an intern position to augment an Automation Center of Excellence for Robotic Process Automation. As a director and his supervisor, I was very pleased with his performance. <span class = 'purple'>He carried himself and delivered as a full time professional RPA developer.</span> Additionally contributing to efforts outside his primary role including <span class='purple'>leading a refresh and re-implemention of our code repository, establishing baseline best practices for our development approach</span>, and <span class='purple'>coordinating and mentoring other interns.</span> Any business or institution will greatly benefit from his employment. ",
+    },
+    {
+      id: 2,
       name: 'Aileen Miller',
       LinkedIn: 'https://www.linkedin.com/in/aileen-miller-a0182452/',
       designation: 'Senior Business Systems Analyst at George Mason University',
@@ -20,7 +29,7 @@ function Testimonials() {
       text: "Ankit is a pleasure to work with. He's a true <span class='purple'>outside the box thinker</span> who has innovative ideas and focuses on <span class='purple'>problem solving</span>. He is a team player with a <span class='purple'>sense of humor</span> who contributes to a positive working environment. He will be a great addition to any team looking for <span class='purple'>innovative solutions </span> to technical problems. While my work with Ankit focused on Robotic Process Automation, Ankit is a <span class='purple'>quick learner</span> who easily absorbs new information and would excel in any area of technology solutions.",
     },
     {
-      id: 2,
+      id: 3,
       name: 'Alexandra Swords, M.A.',
       LinkedIn: 'https://www.linkedin.com/in/alexandra-swords-m-a-4a2b166a/',
       designation:
@@ -29,7 +38,7 @@ function Testimonials() {
       text: "Ankit was a wonderful student employee! He approached every aspect of the job with <span class='purple'>enthusiasm and positivity</span>, easily becoming a key asset to the team and a favorite among his peers. He reliably showed up to shifts <span class='purple'>on time and consistently</span> demonstrated diligence and <span class='purple'>attentions to detail</span>, allowing his supervisors to trust him with <span class='purple'>executing even complex tasks with minimal oversight</span>. Overall, Ankit was a delightful employee and he would be a great benefit to any team!",
     },
     {
-      id: 3,
+      id: 4,
       name: 'Parul Arora',
       designation:
         'Software Prod and Platform Engineer senior Analyst at Accenture',
