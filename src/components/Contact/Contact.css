@@ -37,6 +37,13 @@
   padding-bottom: 20px;
 }
 
+.contact-copy {
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.7;
+  text-align: left;
+}
+
 .skills-container {
   margin-top: 30px;
   justify-self: center;
@@ -116,6 +123,28 @@
   background-color: #6a1b9a !important;
 }
 
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.contact-actions .btn {
+  min-width: 160px;
+  padding: 12px 22px;
+}
+
+.contact-secondary-btn {
+  border-color: rgba(199, 112, 240, 0.7) !important;
+  color: white !important;
+}
+
+.contact-secondary-btn:hover {
+  background-color: rgba(199, 112, 240, 0.16) !important;
+}
+
 @media (max-width: 767px) {
   .contact-about,
   .contact-form-wrapper {
@@ -124,6 +153,10 @@
 
   .connect-heading {
     font-size: 2.5rem;
+  }
+
+  .contact-section {
+    padding-top: 160px;
   }
 }
 /* Fix for Particle overlay blocking inputs */

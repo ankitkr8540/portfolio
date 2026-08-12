@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col, Tab, Tabs } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Particle from '../Particle';
 import { AiOutlineDownload } from 'react-icons/ai';
@@ -7,11 +7,11 @@ import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import pdfDataScientist from '../../Assets/Ankit_MLE_Resume.pdf';
+import purple_resume from '../../Assets/Kumar_Ankit_purple.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const ResumeNew = () => {
   const [width, setWidth] = useState(1200);
-  const [key, setKey] = useState('software');
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -39,11 +39,18 @@ const ResumeNew = () => {
     <div>
       <Particle />
       <Container className='resume-section'>
+        <h1 className='project-heading'>
+          My <strong className='purple'>Resume</strong>
+        </h1>
+        <p className='resume-intro'>
+          Machine learning engineering experience across production GenAI,
+          agentic RAG, physics-informed modeling, and data systems.
+        </p>
         <Row style={{ justifyContent: 'center', position: 'relative' }}>
           <Row className='resume'>
             <Document
               onLoadSuccess={onDocumentLoadSuccess}
-              file={pdfDataScientist}
+              file={purple_resume}
               options={{ workerSrc: '/pdf.worker.js' }}
               className='d-flex justify-content-center'
             >
@@ -91,7 +98,7 @@ const ResumeNew = () => {
               style={{ maxWidth: '250px' }}
             >
               <AiOutlineDownload />
-              &nbsp;Download CV
+              &nbsp;Download Resume
             </Button>
           </Row>
         </Row>

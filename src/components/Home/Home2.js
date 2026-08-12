@@ -2,11 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import myImg from '../../Assets/Ankit_cat.png';
 import Tilt from 'react-parallax-tilt';
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import Testimonials from './Testimonials';
 
@@ -22,54 +18,48 @@ function Home2() {
           </Col>
           <Col md={8} className='home-about-description'>
             <h1 style={{ fontSize: '2.6em' }}>
-              LET ME <span className='purple'> INTRODUCE </span> MYSELF
+              I BUILD <span className='purple'> AI SYSTEMS </span> THAT SHIP
             </h1>
             <p className='home-about-body'>
-              Hello! I'm Ankit, a{' '}
-              <b className='purple'>machine learning engineer</b> who translates
-              complex data patterns into actionable intelligence.
+              I'm a <b className='purple'>machine learning and GenAI engineer</b>{' '}
+              with 4+ years of experience taking systems from ambiguous
+              requirements through data, modeling, evaluation, deployment, and
+              validation. My foundation spans{' '}
+              <b className='purple'>probability and statistics</b>, classical
+              machine learning, deep learning, time-series forecasting, NLP,
+              retrieval, and agentic AI.
               <br />
               <br />
-              My professional journey began at Accenture where I engineered{' '}
+              At <b className='purple'>Milwaukee Tool</b>, I owned the end-to-end
+              development and validation of a{' '}
               <b className='purple'>
-                hybrid financial forecasting systems
-              </b>{' '}
-              that combined <b className='purple'>LSTM</b>,{' '}
-              <b className='purple'>XGBoost</b>, and{' '}
-              <b className='purple'>SARIMA models</b> to deliver{' '}
-              <b className='purple'>explainable predictions</b> for
-              institutional clients.
+                physics-constrained thermal prediction system
+              </b>
+              , working across product, reliability, and firmware teams to move
+              the model from research through embedded implementation. The
+              system achieved a 2.2°C maximum RMSE across 30 held-out profiles,
+              reduced validation from 30 days to 3 days, and supported $100K in
+              projected hardware savings.
               <br />
               <br />
-              Currently completing my Master's in Computer Science at GMU with a{' '}
-              <b className='purple'>3.93 GPA</b>, I've focused on developing
-              novel approaches to <b className='purple'>few-shot learning</b>{' '}
-              and <b className='purple'>cross-lingual NLP</b>.
+              I also founded <b className='purple'>Mitra</b>, an AI-powered
+              university decision-support platform. I built its AWS ingestion
+              and ETL pipeline, bounded <b className='purple'>agentic RAG</b>{' '}
+              workflow, hybrid retrieval, reranking, evidence-gated generation,
+              evaluation, deployment, and observability for more than 200 alpha
+              users.
               <br />
               <br />
-              I'm certified as an{' '}
-              <b className='purple'>AWS Developer Associate</b> and{' '}
-              <b className='purple'>AWS Machine Learning Engineer Associate</b>,
-              validating my expertise in cloud-based ML implementations.
+              Earlier at <b className='purple'>Accenture</b>, I developed
+              financial KPI forecasting and analytics products using PySpark,
+              SQL, LSTM, XGBoost, SARIMA, and FinBERT-derived market signals.
+              That work combined statistical forecasting, structured financial
+              data, and NLP signals in analyst-facing products.
               <br />
-              <br />I find satisfaction in architecting{' '}
-              <b className='purple'>end-to-end ML systems</b>—from my{' '}
-              <b className='purple'>AWS-powered RAG implementation</b> in
-              UniConnect to optimizing{' '}
-              <b className='purple'>distributed recommendation engines</b> with{' '}
-              <b className='purple'>PySpark</b>.
-              <br />
-              <br />
-              When I'm not fine-tuning models or engineering{' '}
-              <b className='purple'>data pipelines</b>, you'll find me
-              organizing workshops for GMU's{' '}
-              <b className='purple'>Google Developer Group</b>, helping build
-              our campus <b className='purple'>AI community</b> from the ground
-              up.
-              <br />
-              <br />
-              Let's connect and explore how machine learning can solve
-              meaningful problems!
+              <br />I hold an <b className='purple'>M.S. in Computer Science</b>{' '}
+              from George Mason University with a <b className='purple'>machine learning</b>
+              concentration and a <b className='purple'>3.90/4.0 GPA</b>. I am also <b className='purple'>AWS certified </b> in
+              machine learning and cloud development.
               <br />
             </p>
           </Col>

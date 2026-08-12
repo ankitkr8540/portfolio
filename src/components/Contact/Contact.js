@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row, Form, Button, Alert } from 'react-bootstrap';
 import Particle from '../Particle';
 import './Contact.css'; // Make sure to create this CSS file
 import emailjs from '@emailjs/browser';
-import { FcCalendar } from 'react-icons/fc';
+import { FaEnvelope, FaLinkedinIn } from 'react-icons/fa';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -65,80 +65,63 @@ function Contact() {
     setValidated(false);
   };
 
-  useEffect(() => {
-    // Add Calendly script
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Add Calendly stylesheet
-    const link = document.createElement('link');
-    link.href = 'https://assets.calendly.com/assets/external/widget.css';
-    link.rel = 'stylesheet';
-    document.head.appendChild(link);
-
-    return () => {
-      // Clean up on unmount
-      document.body.removeChild(script);
-      document.head.removeChild(link);
-    };
-  }, []);
-
   return (
     <Container fluid className='contact-section'>
       <Particle />
       <Container>
         <h1 className='contact-heading text-center mb-5'>
-          Your Vision, My Expertise: Let's Create Something Exceptional
+          Let's Build Reliable AI Systems
         </h1>
         <Row style={{ justifyContent: 'center' }}>
           <Col md={6} className='contact-about mt-20'>
             <h2 className='connect-heading text-center mb-5'>
-              Let's Connect !
+              Let's Connect
             </h2>
+            <p className='contact-copy'>
+              I'm interested in machine learning and GenAI roles where I can
+              own systems end to end and collaborate closely with product,
+              engineering, and domain experts.
+            </p>
             <div className='skills-container'>
               <div className='skill-box'>
-                <span className='skill-check'>✓</span> AWS Certified ML Engineer
-                & Cloud Infrastructure Design
+                <span className='skill-check'>✓</span> Production RAG, retrieval,
+                and reranking systems
               </div>
               <div className='skill-box'>
-                <span className='skill-check'>✓</span> NLP & Large Language
-                Model Fine-tuning Specialist
+                <span className='skill-check'>✓</span> Bounded agentic workflows
+                with evaluation and observability
               </div>
               <div className='skill-box'>
-                <span className='skill-check'>✓</span> Scalable Big Data
-                Analytics Solutions
+                <span className='skill-check'>✓</span> Physics-informed and
+                time-series machine learning
               </div>
               <div className='skill-box'>
-                <span className='skill-check'>✓</span> RAG System Implementation
-                & Optimization
+                <span className='skill-check'>✓</span> AWS data, deployment, and
+                MLOps infrastructure
               </div>
               <div className='skill-box'>
-                <span className='skill-check'>✓</span> Cost-Optimized AI/ML
-                Cloud Architecture
+                <span className='skill-check'>✓</span> Clear collaboration across
+                technical and nontechnical teams
               </div>
             </div>
-            <Button
-              variant='primary'
-              className='submit-btn mt-4'
-              style={{
-                backgroundColor: '#4B0082',
-                border: 'none',
-                padding: '12px 30px',
-                width: '70%',
-                marginTop: '20px',
-              }}
-              onClick={() => {
-                window.Calendly.initPopupWidget({
-                  url: 'https://calendly.com/akumar37-gmu/30min?hide_landing_page_details=1&hide_gdpr_banner=1',
-                });
-                return false;
-              }}
-            >
-              <FcCalendar style={{ marginRight: '8px' }} />
-              Schedule a 30-minute call directly
-            </Button>
+            <div className='contact-actions'>
+              <Button
+                variant='primary'
+                className='submit-btn'
+                href='mailto:027.ankit.kumar@gmail.com'
+              >
+                <FaEnvelope /> Email Me
+              </Button>
+              <Button
+                variant='outline-light'
+                className='contact-secondary-btn'
+                href='https://www.linkedin.com/in/027kumarankit/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FaLinkedinIn /> LinkedIn
+              </Button>
+            </div>
           </Col>
 
           <Col md={6} className='contact-form-wrapper'>

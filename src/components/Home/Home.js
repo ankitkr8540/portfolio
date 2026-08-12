@@ -31,7 +31,28 @@ function Home() {
                 <strong className='main-name'> ANKIT KUMAR</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: 'left' }}>
+              <p className='home-tagline'>
+                I own ML systems from ambiguous requirements to deployment—
+                combining statistical reasoning, core machine learning,
+                retrieval, agentic workflows, and production engineering.
+              </p>
+
+              <div className='hero-proof' aria-label='Selected delivery outcomes'>
+                <div className='hero-proof-item'>
+                  <strong>4+ years</strong>
+                  <span>ML delivery</span>
+                </div>
+                {/* <div className='hero-proof-item'>
+                  <strong>42% → 87%</strong>
+                  <span>retrieval relevance</span>
+                </div>
+                <div className='hero-proof-item'>
+                  <strong>30 → 3 days</strong>
+                  <span>validation cycle</span>
+                </div> */}
+              </div>
+
+              <div className='home-typewriter'>
                 <Type />
               </div>
             </Col>
@@ -65,7 +86,7 @@ function Home() {
                   }}
                   onClick={() => (window.location.href = '#/contact')}
                 >
-                  Contact Me
+                  Let's Connect
                 </Button>
               </Row>
               <Row className='justify-content-center'>

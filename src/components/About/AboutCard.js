@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import { ImPointRight } from 'react-icons/im';
 
 function AboutCard() {
   return (
@@ -8,72 +7,37 @@ function AboutCard() {
       <Card.Body>
         <blockquote className='blockquote mb-0'>
           <p style={{ textAlign: 'justify' }}>
-            Growing up in remote village of{' '}
-            <span className='purple'>Bihar, India</span>, the first{' '}
-            <span className='purple'>15 years without electricity</span> shaped
-            a unique perspective on life and technology. Now competing in a
-            digital world without an ivy league degree or groundbreaking
-            invention—just{' '}
-            <span className='purple'>unwavering determination</span> and
-            <span className='purple'> grit</span> that no school on earth could
-            teach.
+            I grew up in a remote village in{' '}
+            <span className='purple'>Bihar, India</span>, spending my first 15
+            years without reliable electricity. That experience shaped how I
+            approach technology: focus on what is useful, build for real
+            constraints, and never take access or opportunity for granted.
             <br />
             <br />
-            The professional journey began with{' '}
-            <span className='purple'>
-              ML-integrated web development
-            </span> at <span className='purple'>Accenture</span>, evolving into
-            specialized work in{' '}
-            <span className='purple'>
-              Machine Learning, Data Mining, Advanced NLP, Mining Massive
-              Datasets with MapReduce and Artificial Intelligence
-            </span>{' '}
-            through a <span className='purple'>Masters degree</span> at{' '}
-            <span className='purple'>George Mason University</span>.
+            My work now spans <span className='purple'>production GenAI</span>,
+            retrieval and NLP systems, time-series forecasting, and
+            physics-informed modeling. I enjoy the full engineering path—from
+            clarifying an ambiguous problem and building the data foundation to
+            evaluating, deploying, and monitoring the final system.
             <br />
             <br />
-            Every task receives <span className='purple'>complete focus</span>,
-            resulting in solutions that are{' '}
-            <span className='purple'>elegant yet practical</span>. Values
-            include <span className='purple'>simplicity and effectiveness</span>{' '}
-            in all creations, with a belief in straightforward
-            communication—what you see is genuinely what you get.
+            I work best where software, models, and domain knowledge meet. At
+            Milwaukee Tool, that meant partnering with product, reliability,
+            and firmware engineers on embedded thermal prediction. With Mitra,
+            it meant turning thousands of noisy university webpages into an
+            evidence-grounded <span className='purple'>agentic RAG system</span>.
             <br />
             <br />
-            Approaching challenges involves{' '}
-            <span className='purple'>analytical thinking</span> paired with{' '}
-            <span className='purple'>creative problem-solving</span>. Those who
-            know me describe someone who is{' '}
-            <span className='purple'>patient</span> and{' '}
-            <span className='purple'>detail-oriented</span>—qualities developed
-            through years of overcoming obstacles with limited resources.
+            My operating principles are straightforward:{' '}
+            <span className='purple'>own the outcome</span>, explain complex
+            ideas clearly, validate assumptions with evidence, and keep
+            improving the system after the first version works.
             <br />
             <br />
-            Always <span className='purple'>open to opportunities</span>, feel
-            free to connect through whatever medium works best. Actions speak
-            louder than words, but when words are necessary, they come with{' '}
-            <span className='purple'>authenticity and thoughtfulness</span> (and
-            yes, plenty of humor). Beyond technology, joy comes from cooking,
-            museums, and good food—simple pleasures that complement an{' '}
-            <span className='purple'>introspective nature</span>.
+            Outside engineering, I enjoy cooking, museums, travel, and learning
+            how different people solve familiar problems. I am currently based
+            in <span className='purple'>Seattle, Washington</span>.
           </p>
-          {/* <ul>
-            <li className='about-activity'>
-              <ImPointRight /> Reading Tech Blogs as well as Novels
-            </li>
-            <li className='about-activity'>
-              <ImPointRight /> Learning about different food cultures and trying
-              out the recipes
-            </li>
-            <li className='about-activity'>
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
-          <p style={{ color: 'rgb(155 126 172)' }}>
-            "Code speaks louder than words. Let's keep the chatter to the
-            keyboard."{' '}
-          </p>
-          <footer className='blockquote-footer'>Ankit</footer> */}
         </blockquote>
       </Card.Body>
     </Card>

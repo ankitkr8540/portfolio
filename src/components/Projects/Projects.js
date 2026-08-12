@@ -2,10 +2,10 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './ProjectCards';
 import Particle from '../Particle';
-import Basta from '../../Assets/Basta_preview.png';
-import clg from '../../Assets/cover-letter-generator.jpeg';
-import leetcode from '../../Assets/leetcode-previewed.jpeg';
-import vscode from '../../Assets/vscode.jpeg';
+import petStudy from '../../Assets/vscode.jpeg';
+import bastaPreview from '../../Assets/Basta_preview.png';
+import coverLetterPreview from '../../Assets/cover-letter-generator.jpeg';
+import leetcodePreview from '../../Assets/leetcode-previewed.jpeg';
 
 function Projects() {
   return (
@@ -13,67 +13,151 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className='project-heading'>
-          My Recent <strong className='purple'>Works </strong>
+          Selected <strong className='purple'>ML Systems </strong>
         </h1>
-        <p style={{ color: 'white' }}>
-          Here are a few projects I've worked on recently.
+        <p className='project-intro'>
+          Production-minded work spanning agentic RAG, physics-informed
+          modeling, cross-lingual NLP, and financial forecasting.
+        </p>
+        <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
+          <Col md={6} className='project-card'>
+            <ProjectCard
+              isBlog={false}
+              visualLabel='AGENTIC RAG'
+              kicker='FOUNDER & LEAD ML ENGINEER'
+              title='Mitra — University Decision Support'
+              description='Built an AWS ingestion and ETL platform for 8K+ webpages per crawl, then developed a bounded LangGraph workflow for intent classification, query decomposition, entity resolution, retrieval, clarification, retry, verification, and abstention.'
+              impact='Improved relevant-context retrieval from 42% to 87% on a labeled evaluation set and reached 78% positive feedback across 200+ alpha users.'
+              tags={[
+                'LangGraph',
+                'LangChain',
+                'FAISS HNSW',
+                'PySpark',
+                'SageMaker',
+              ]}
+            />
+          </Col>
+
+          <Col md={6} className='project-card'>
+            <ProjectCard
+              isBlog={false}
+              visualLabel='PHYSICS × ML'
+              kicker='MILWAUKEE TOOL'
+              title='Physics-Constrained Thermal Prediction'
+              description='Owned the end-to-end development of a three-body thermal model for embedded inference, including data synchronization, physics-constrained training, firmware-aligned warning logic, and a software validation twin that reproduced device behavior.'
+              impact='Achieved 1–2°C accuracy, delivered proactive warnings up to one minute earlier, and reduced the validation cycle from approximately 30 days to 3 days.'
+              tags={[
+                'PyTorch',
+                'ODE Modeling',
+                'Embedded C',
+                'Digital Twin',
+                'Validation',
+              ]}
+            />
+          </Col>
+
+          <Col md={6} className='project-card'>
+            <ProjectCard
+              isBlog={false}
+              visualLabel='CROSS-LINGUAL NLP'
+              kicker='RESEARCH PROJECT'
+              title='PyLinguist — Intelligent Code Translation'
+              description='Built a two-stage pipeline for translating Python across seven languages: deterministic keyword and structural transformation followed by temperature-zero LLM refinement using GPT-4, Claude, and DeepSeek.'
+              impact='Scaled evaluation to 550K+ samples and achieved 98% semantic similarity through syntax checks, structural comparison, embeddings, and back-translation.'
+              tags={[
+                'Transformers',
+                'Prompt Engineering',
+                'Evaluation',
+                'Python',
+              ]}
+              ghLink='https://github.com/ankitkr8540/pylinguist-paper'
+            />
+          </Col>
+
+          <Col md={6} className='project-card'>
+            <ProjectCard
+              isBlog={false}
+              visualLabel='FORECASTING'
+              kicker='ACCENTURE'
+              title='Enterprise Financial KPI Forecasting'
+              description='Developed reusable analytics products by combining structured financial features with LSTM, XGBoost, and SARIMA forecasts plus FinBERT-derived market signals. Built the supporting PySpark and SQL workflows over partitioned Parquet data.'
+              impact='Reached 92% directional accuracy in stable conditions and improved transition-period performance by 35% for analyst-facing KPI forecasts.'
+              tags={[
+                'PySpark',
+                'SQL',
+                'LSTM',
+                'XGBoost',
+                'FinBERT',
+              ]}
+            />
+          </Col>
+        </Row>
+
+        <h2 className='project-subheading'>Additional Engineering Projects</h2>
+        <p className='project-intro'>
+          Earlier research, developer tooling, and product builds that show the
+          range behind my production ML work.
         </p>
         <Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
           <Col md={4} className='project-card'>
             <ProjectCard
-              imgPath={vscode}
               isBlog={false}
-              title='Few-Shot Learning: Reproducibility Study'
-              description='Conducted comprehensive research on Pattern-Exploiting Training (PET) for few-shot text classification, implementing and validating the framework using RoBERTa. Enhanced the original implementation with novel pattern contextualization and domain-specific optimizations, while pioneering a thorough analysis of model robustness under various perturbation types. Research demonstrates improved training efficiency and provides insights into model behavior in low-resource scenarios.'
+              imgPath={petStudy}
+              kicker='ML RESEARCH'
+              title='Few-Shot Learning Reproducibility Study'
+              description='Reproduced and evaluated Pattern-Exploiting Training for few-shot text classification, with controlled experiments around prompt patterns, verbalizers, and limited-label performance.'
+              tags={['Few-Shot Learning', 'NLP', 'PyTorch', 'Evaluation']}
               ghLink='https://github.com/StringAna/PET_Reproducibility_Study'
             />
           </Col>
 
           <Col md={4} className='project-card'>
             <ProjectCard
-              imgPath={vscode}
               isBlog={false}
-              title='PyLinguist: Intelligent Code Translation'
-              description='Developed an innovative code translation framework that leverages multiple large language models and custom keyword mapping techniques. Built a sophisticated pipeline combining various AI models (GPT-4, Claude, DeepseekAI) with the Google Translate API for robust Python code translation. Implemented comprehensive evaluation mechanisms to ensure preservation of code functionality and semantic meaning across languages.'
-              ghLink='https://github.com/ankitkr8540/pylinguist-paper'
-            />
-          </Col>
-          <Col md={4} className='project-card'>
-            <ProjectCard
-              imgPath={Basta}
-              isBlog={false}
+              imgPath={bastaPreview}
+              kicker='FULL-STACK PRODUCT'
               title='Basta E-commerce Shopping App'
-              description='I developed Basta Bag, a full-featured e-commerce platform, using the MERN stack. The frontend is built with React and Redux for state management, while the backend uses Node.js with Express to create a RESTful API. MongoDB stores all product, user, and order data. The application includes user authentication with JWT, product browsing with search functionality, shopping cart features, and a secure checkout process. For admin users, I implemented a dashboard to manage products and orders. The entire application is deployed on Heroku, making it accessible online with a responsive design for all devices.'
+              description='Built an end-to-end shopping experience with product discovery, cart workflows, and a deployed web interface—an early product-engineering project focused on usable, complete delivery.'
+              tags={['React', 'Full Stack', 'Product UI', 'Deployment']}
               ghLink='https://github.com/ankitkr8540/EcommerceShoppingApp'
               demoLink='https://basta-bag-26da25a17a75.herokuapp.com/'
             />
           </Col>
+
           <Col md={4} className='project-card'>
             <ProjectCard
-              imgPath={clg}
               isBlog={false}
-              title='Better-cover-letter-Generator'
-              description='It generates a better cover letter based on the provided job description. It uses NLP to analyze the job description and generate a cover letter that matches the job description. It is built using Streamlit and Snowflakes.'
+              imgPath={coverLetterPreview}
+              kicker='GENAI APPLICATION'
+              title='Better Cover Letter Generator'
+              description='Created a Streamlit application that turns role and candidate context into a tailored cover-letter draft, demonstrating practical prompt design and human-in-the-loop generation.'
+              tags={['Generative AI', 'Streamlit', 'Prompting', 'Python']}
               ghLink='https://github.com/lingyundai/snowflake-hackathon'
               demoLink='https://better-coverletter-generator.streamlit.app/'
             />
           </Col>
+
           <Col md={4} className='project-card'>
             <ProjectCard
-              imgPath={leetcode}
               isBlog={false}
-              title='Leetcode Calendar npm package'
-              description="It is an npm package that generates a calendar of Leetcode problems based on the user's preferences. It is built using Node.js and is published on npm."
+              imgPath={leetcodePreview}
+              kicker='PUBLISHED DEVELOPER TOOL'
+              title='LeetCode Calendar'
+              description='Published an npm package that turns LeetCode activity into a calendar-style contribution view for developer profiles and portfolio integrations.'
+              tags={['JavaScript', 'npm', 'Developer Tool', 'API']}
               ghLink='https://github.com/ankitkr8540/leetcode-calendar'
               demoLink='https://www.npmjs.com/package/leetcode-calendar'
             />
           </Col>
+
           <Col md={4} className='project-card'>
             <ProjectCard
-              imgPath={vscode}
               isBlog={false}
-              title='VS Code Extension - Workspace Archiver'
-              description='It is a VS Code extension that helps in archiving the workspace. It creates a copy of the whole project in a workspaceArchiver.txt and saves it in the project location. It is published on the VS Code marketplace.'
+              imgPath={petStudy}
+              kicker='DEVELOPER PRODUCTIVITY'
+              title='VS Code Workspace Archiver'
+              description='Built and published a VS Code extension for archiving and restoring workspace state, reducing friction when developers switch between active projects.'
+              tags={['VS Code API', 'JavaScript', 'Extension', 'Automation']}
               ghLink='https://github.com/ankitkr8540/workspace-archiver'
               demoLink='https://marketplace.visualstudio.com/items?itemName=AnkitKumar.workspace-archiver'
             />
