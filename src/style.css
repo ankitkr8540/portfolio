@@ -850,6 +850,13 @@ button:focus {
   filter: invert(1) grayscale(1) brightness(2);
 }
 
+.capability-modal .modal-title {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+}
+
 .modal-title-wrap {
   display: flex;
   gap: 16px;
