@@ -8,35 +8,46 @@ function AboutCard() {
         <blockquote className='blockquote mb-0'>
           <p style={{ textAlign: 'justify' }}>
             I grew up in a remote village in{' '}
-            <span className='purple'>Bihar, India</span>, spending my first 15
-            years without reliable electricity. That experience shaped how I
-            approach technology: focus on what is useful, build for real
-            constraints, and never take access or opportunity for granted.
+            <span className='purple'>Bihar, India</span>, with{' '}
+            <span className='purple'>no reliable electricity for the first 15
+            years of my life.</span> When I was a kid I{' '}
+            <span className='purple'>wired together old battery packs</span>{' '}
+            just to get a light bulb working in my room so I could read at
+            night. That's not a metaphor. That's literally where this started.
             <br />
             <br />
-            My work now spans <span className='purple'>production GenAI</span>,
-            retrieval and NLP systems, time-series forecasting, and
-            physics-informed modeling. I enjoy the full engineering path—from
-            clarifying an ambiguous problem and building the data foundation to
-            evaluating, deploying, and monitoring the final system.
+            <span className='purple'>I come from zero.</span> No electricity,
+            no obvious path, no blueprint. And yet here I am, building
+            production AI systems, earning a{' '}
+            <span className='purple'>Distinguished Academic Achievement Award
+            in Machine Learning</span>, and competing every day with some of
+            the most technically advanced people in the world. I'm immensely
+            proud of that journey. And I'm equally humbled by it, because I
+            know exactly how much each step cost and who helped me get there.
             <br />
             <br />
-            I work best where software, models, and domain knowledge meet. At
-            Milwaukee Tool, that meant partnering with product, reliability,
-            and firmware engineers on embedded thermal prediction. With Mitra,
-            it meant turning thousands of noisy university webpages into an
-            evidence-grounded <span className='purple'>agentic RAG system</span>.
+            The scarcity I grew up with taught me something school never could:{' '}
+            <span className='purple'>you don't wait for perfect conditions.</span>{' '}
+            You figure out what you have, and you make it work. That instinct
+            shows up in everything I do.
             <br />
             <br />
-            My operating principles are straightforward:{' '}
-            <span className='purple'>own the outcome</span>, explain complex
-            ideas clearly, validate assumptions with evidence, and keep
-            improving the system after the first version works.
+            As a person I'm{' '}
+            <span className='purple'>calm, candid, and I mean what I say.</span>{' '}
+            Hard feedback doesn't scare me. I welcome it, because it's the
+            fastest way to get better. I recharge alone, think carefully before
+            I speak, and when I commit to something,{' '}
+            <span className='purple'>I follow through.</span>
             <br />
             <br />
-            Outside engineering, I enjoy cooking, museums, travel, and learning
-            how different people solve familiar problems. I am currently based
-            in <span className='purple'>Seattle, Washington</span>.
+            Outside work, I hike the Cascades when I need to clear my head, and
+            I cook. Seriously. I'll taste something at a restaurant, come home,
+            pull up YouTube, track down the cookbook, and keep going until I can
+            make it myself. I've worked through more cuisines than I can count
+            and I'm{' '}
+            <span className='purple'>genuinely proud of what I can put on a
+            table.</span> Food is also how I connect with people. Sharing a
+            meal you made yourself is hard to beat.
           </p>
         </blockquote>
       </Card.Body>

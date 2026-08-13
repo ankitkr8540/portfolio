@@ -5,8 +5,7 @@ import Container from 'react-bootstrap/Container';
 import logo from '../Assets/developer.png';
 import { Link } from 'react-router-dom';
 import { ImBlog } from 'react-icons/im';
-import { AiOutlineFundProjectionScreen, AiOutlineUser } from 'react-icons/ai';
-
+import { AiOutlineFundProjectionScreen, AiOutlineUser, AiFillHome } from 'react-icons/ai';
 import { CgFileDocument } from 'react-icons/cg';
 
 function NavBar() {
@@ -31,8 +30,8 @@ function NavBar() {
       className={navColour ? 'sticky' : 'navbar'}
     >
       <Container>
-        <Navbar.Brand as={Link} to='/' className='d-flex'>
-          <img src={logo} className='img-fluid logo' alt='brand' />
+        <Navbar.Brand as={Link} to='/' className='d-flex align-items-center'>
+          <AiFillHome style={{ fontSize: '2rem', color: '#c770f0' }} />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls='responsive-navbar-nav'

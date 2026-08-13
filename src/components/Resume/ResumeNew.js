@@ -6,8 +6,7 @@ import { AiOutlineDownload } from 'react-icons/ai';
 import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
-import pdfDataScientist from '../../Assets/Ankit_MLE_Resume.pdf';
-import purple_resume from '../../Assets/Kumar_Ankit_purple.pdf';
+import pdfDataScientist from '../../Assets/Kumar_Ankit_Resume.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const ResumeNew = () => {
@@ -50,7 +49,7 @@ const ResumeNew = () => {
           <Row className='resume'>
             <Document
               onLoadSuccess={onDocumentLoadSuccess}
-              file={purple_resume}
+              file={pdfDataScientist}
               options={{ workerSrc: '/pdf.worker.js' }}
               className='d-flex justify-content-center'
             >

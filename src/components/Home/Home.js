@@ -31,25 +31,33 @@ function Home() {
                 <strong className='main-name'> ANKIT KUMAR</strong>
               </h1>
 
+              <p className='home-location'>📍 Seattle, WA</p>
+
               <p className='home-tagline'>
-                I own ML systems from ambiguous requirements to deployment—
-                combining statistical reasoning, core machine learning,
-                retrieval, agentic workflows, and production engineering.
+                I build ML systems that actually ship. From the first messy
+                requirement to production monitoring, I own the whole thing.
               </p>
 
-              <div className='hero-proof' aria-label='Selected delivery outcomes'>
-                <div className='hero-proof-item'>
-                  <strong>4+ years</strong>
-                  <span>ML delivery</span>
-                </div>
-                {/* <div className='hero-proof-item'>
-                  <strong>42% → 87%</strong>
-                  <span>retrieval relevance</span>
-                </div>
-                <div className='hero-proof-item'>
-                  <strong>30 → 3 days</strong>
-                  <span>validation cycle</span>
-                </div> */}
+
+              <div className='aws-certs'>
+                <a
+                  href='https://cp.certmetrics.com/amazon/en/public/verify/credential/a780eb1a5232418bb6a9d3aa70464579'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='aws-cert-badge'
+                >
+                  <span className='aws-cert-icon'>&#9733;</span>
+                  AWS ML Engineer Associate
+                </a>
+                <a
+                  href='https://cp.certmetrics.com/amazon/en/public/verify/credential/2ad757ecafda46949d3df7d1d1c920db'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='aws-cert-badge'
+                >
+                  <span className='aws-cert-icon'>&#9733;</span>
+                  AWS Developer Associate
+                </a>
               </div>
 
               <div className='home-typewriter'>

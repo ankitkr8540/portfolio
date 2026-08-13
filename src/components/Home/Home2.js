@@ -6,6 +6,72 @@ import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import Testimonials from './Testimonials';
 
+const highlights = [
+  {
+    kicker: 'Milwaukee Electric Tool · MLE',
+    headline: 'Physics-informed thermal warning system',
+    context:
+      'End-to-end ownership: PyTorch model → Azure ETL → embedded C → production firmware.',
+    metric: '30 days → 3 days validation · $100K projected savings',
+  },
+  {
+    kicker: 'Mitra · Founder & Lead ML Engineer',
+    headline: 'Bounded agentic RAG platform',
+    context:
+      'LangGraph agent with hybrid retrieval, cross-encoder reranking, and a DistilBERT + PPO RLHF feedback loop.',
+    metric: '42% → 87% retrieval relevance · 200+ alpha users',
+  },
+  {
+    kicker: 'PyLinguist · Research · ACL BEA',
+    headline: 'Cross-lingual Python translation & LLM evaluation',
+    context:
+      'Two-stage translation pipeline with back-translation evaluation scaled across 7 languages and 550K+ samples.',
+    metric: 'Submitted to ACL BEA · 7 languages · 550K+ samples',
+  },
+];
+
+const skills = [
+  // Req 1 — large-scale data platforms
+  'PySpark',
+  'AWS Glue',
+  'Athena',
+  'Parquet',
+  'ETL Pipelines',
+  'Event-Driven Pipelines',
+  // Req 2 — dataset analysis & data quality
+  'Schema Validation',
+  'Embedding Drift',
+  'Data Quality Monitoring',
+  'Incremental Parquet Updates',
+  'Source Provenance',
+  // Req 3 — metrics & anomaly detection
+  'Anomaly Detection',
+  'CloudWatch',
+  'MLflow',
+  'LangSmith',
+  // Req 4 — experimental design & stats
+  'Ablation Studies',
+  'A/B Testing',
+  'Holdout Design',
+  'Statistical Sampling',
+  'Evaluation Frameworks',
+  // Req 6 — ML/LLM workflows
+  'Training Data Preparation',
+  'RLHF',
+  'PPO',
+  'Reward Modeling',
+  'Feedback Loops',
+  'LLM Evaluation',
+  'Agentic Systems',
+  'LangGraph',
+  'RAG',
+  'SentenceTransformers',
+  'Cross-Encoder Reranking',
+  'FAISS HNSW',
+  'PyTorch',
+  'AWS SageMaker',
+];
+
 function Home2() {
   return (
     <Container fluid className='home-about-section' id='about'>
@@ -18,52 +84,54 @@ function Home2() {
           </Col>
           <Col md={8} className='home-about-description'>
             <h1 style={{ fontSize: '2.6em' }}>
-              I BUILD <span className='purple'> AI SYSTEMS </span> THAT SHIP
+              I BUILD <span className='purple'>ML SYSTEMS</span> THAT WORK
             </h1>
-            <p className='home-about-body'>
-              I'm a <b className='purple'>machine learning and GenAI engineer</b>{' '}
-              with 4+ years of experience taking systems from ambiguous
-              requirements through data, modeling, evaluation, deployment, and
-              validation. My foundation spans{' '}
-              <b className='purple'>probability and statistics</b>, classical
-              machine learning, deep learning, time-series forecasting, NLP,
-              retrieval, and agentic AI.
+            <p className='home-about-intro'>
+              I'm a <b className='purple'>GenAI and ML engineer</b> who
+              specializes in{' '}
+              <b className='purple'>agentic AI, RAG pipelines, and production ML</b>.
+              A lot of my best work started as a vague ask. Someone knew
+              something was off but couldn't say exactly what. I ask the
+              uncomfortable questions early,{' '}
+              <b className='purple'>push back when the numbers don't add up</b>,
+              and don't walk away until I've seen it run in production. That's
+              been true whether I'm working on embedded C for a power tool or a
+              cloud-hosted agent with 200 users.
               <br />
               <br />
-              At <b className='purple'>Milwaukee Tool</b>, I owned the end-to-end
-              development and validation of a{' '}
-              <b className='purple'>
-                physics-constrained thermal prediction system
-              </b>
-              , working across product, reliability, and firmware teams to move
-              the model from research through embedded implementation. The
-              system achieved a 2.2°C maximum RMSE across 30 held-out profiles,
-              reduced validation from 30 days to 3 days, and supported $100K in
-              projected hardware savings.
-              <br />
-              <br />
-              I also founded <b className='purple'>Mitra</b>, an AI-powered
-              university decision-support platform. I built its AWS ingestion
-              and ETL pipeline, bounded <b className='purple'>agentic RAG</b>{' '}
-              workflow, hybrid retrieval, reranking, evidence-gated generation,
-              evaluation, deployment, and observability for more than 200 alpha
-              users.
-              <br />
-              <br />
-              Earlier at <b className='purple'>Accenture</b>, I developed
-              financial KPI forecasting and analytics products using PySpark,
-              SQL, LSTM, XGBoost, SARIMA, and FinBERT-derived market signals.
-              That work combined statistical forecasting, structured financial
-              data, and NLP signals in analyst-facing products.
-              <br />
-              <br />I hold an <b className='purple'>M.S. in Computer Science</b>{' '}
-              from George Mason University with a <b className='purple'>machine learning</b>
-              concentration and a <b className='purple'>3.90/4.0 GPA</b>. I am also <b className='purple'>AWS certified </b> in
-              machine learning and cloud development.
-              <br />
+              I've written firmware specs, caught release-blocking bugs before
+              they hit the field, founded a startup, and{' '}
+              <b className='purple'>published NLP research</b>, sometimes in
+              the same year. I do my best work when the problem is{' '}
+              <b className='purple'>still being figured out</b> and the stakes
+              are real.
             </p>
           </Col>
         </Row>
+
+        <Row className='highlight-grid'>
+          {highlights.map((h, i) => (
+            <Col md={4} key={i} className='highlight-card-col'>
+              <div className='highlight-card'>
+                <span className='highlight-kicker'>{h.kicker}</span>
+                <h3 className='highlight-headline'>{h.headline}</h3>
+                <p className='highlight-context'>{h.context}</p>
+                <div className='highlight-metric'>{h.metric}</div>
+              </div>
+            </Col>
+          ))}
+        </Row>
+
+        <Row className='skills-strip-row'>
+          <Col>
+            <div className='skills-strip'>
+              {[...skills, ...skills].map((s, i) => (
+                <span key={i}>{s}</span>
+              ))}
+            </div>
+          </Col>
+        </Row>
+
         <Row>
           <Col md={12}>
             <h1 style={{ fontSize: '2em', paddingTop: '70px', color: 'white' }}>
@@ -72,12 +140,9 @@ function Home2() {
             <Testimonials />
           </Col>
         </Row>
+
         <Row>
           <Col md={12} className='home-about-social'>
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className='purple'>connect </span>with me
-            </p>
             <ul className='home-about-social-links'>
               <li className='social-icons'>
                 <a
@@ -107,4 +172,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

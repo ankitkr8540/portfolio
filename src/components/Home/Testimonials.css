@@ -82,6 +82,38 @@
   text-align: left;
 }
 
+.testimonial-name-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.testimonial-name-row h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.testimonial-linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #0077b5;
+  color: white;
+  font-size: 0.7rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.testimonial-linkedin:hover {
+  background: #005f94;
+  transform: scale(1.15);
+  color: white;
+}
+
 .testimonial-details h4 {
   margin-bottom: 5px;
   font-weight: 600;

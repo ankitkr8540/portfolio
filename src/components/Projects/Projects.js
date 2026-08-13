@@ -4,8 +4,6 @@ import ProjectCard from './ProjectCards';
 import Particle from '../Particle';
 import petStudy from '../../Assets/vscode.jpeg';
 import bastaPreview from '../../Assets/Basta_preview.png';
-import coverLetterPreview from '../../Assets/cover-letter-generator.jpeg';
-import leetcodePreview from '../../Assets/leetcode-previewed.jpeg';
 
 function Projects() {
   return (
@@ -25,7 +23,7 @@ function Projects() {
               isBlog={false}
               visualLabel='AGENTIC RAG'
               kicker='FOUNDER & LEAD ML ENGINEER'
-              title='Mitra — University Decision Support'
+              title='Mitra: University Decision Support'
               description='Built an AWS ingestion and ETL platform for 8K+ webpages per crawl, then developed a bounded LangGraph workflow for intent classification, query decomposition, entity resolution, retrieval, clarification, retry, verification, and abstention.'
               impact='Improved relevant-context retrieval from 42% to 87% on a labeled evaluation set and reached 78% positive feedback across 200+ alpha users.'
               tags={[
@@ -61,7 +59,7 @@ function Projects() {
               isBlog={false}
               visualLabel='CROSS-LINGUAL NLP'
               kicker='RESEARCH PROJECT'
-              title='PyLinguist — Intelligent Code Translation'
+              title='PyLinguist: Intelligent Code Translation'
               description='Built a two-stage pipeline for translating Python across seven languages: deterministic keyword and structural transformation followed by temperature-zero LLM refinement using GPT-4, Claude, and DeepSeek.'
               impact='Scaled evaluation to 550K+ samples and achieved 98% semantic similarity through syntax checks, structural comparison, embeddings, and back-translation.'
               tags={[
@@ -117,51 +115,13 @@ function Projects() {
               imgPath={bastaPreview}
               kicker='FULL-STACK PRODUCT'
               title='Basta E-commerce Shopping App'
-              description='Built an end-to-end shopping experience with product discovery, cart workflows, and a deployed web interface—an early product-engineering project focused on usable, complete delivery.'
+              description='Built an end-to-end shopping experience with product discovery, cart workflows, and a deployed web interface. An early product-engineering project focused on usable, complete delivery.'
               tags={['React', 'Full Stack', 'Product UI', 'Deployment']}
               ghLink='https://github.com/ankitkr8540/EcommerceShoppingApp'
               demoLink='https://basta-bag-26da25a17a75.herokuapp.com/'
             />
           </Col>
 
-          <Col md={4} className='project-card'>
-            <ProjectCard
-              isBlog={false}
-              imgPath={coverLetterPreview}
-              kicker='GENAI APPLICATION'
-              title='Better Cover Letter Generator'
-              description='Created a Streamlit application that turns role and candidate context into a tailored cover-letter draft, demonstrating practical prompt design and human-in-the-loop generation.'
-              tags={['Generative AI', 'Streamlit', 'Prompting', 'Python']}
-              ghLink='https://github.com/lingyundai/snowflake-hackathon'
-              demoLink='https://better-coverletter-generator.streamlit.app/'
-            />
-          </Col>
-
-          <Col md={4} className='project-card'>
-            <ProjectCard
-              isBlog={false}
-              imgPath={leetcodePreview}
-              kicker='PUBLISHED DEVELOPER TOOL'
-              title='LeetCode Calendar'
-              description='Published an npm package that turns LeetCode activity into a calendar-style contribution view for developer profiles and portfolio integrations.'
-              tags={['JavaScript', 'npm', 'Developer Tool', 'API']}
-              ghLink='https://github.com/ankitkr8540/leetcode-calendar'
-              demoLink='https://www.npmjs.com/package/leetcode-calendar'
-            />
-          </Col>
-
-          <Col md={4} className='project-card'>
-            <ProjectCard
-              isBlog={false}
-              imgPath={petStudy}
-              kicker='DEVELOPER PRODUCTIVITY'
-              title='VS Code Workspace Archiver'
-              description='Built and published a VS Code extension for archiving and restoring workspace state, reducing friction when developers switch between active projects.'
-              tags={['VS Code API', 'JavaScript', 'Extension', 'Automation']}
-              ghLink='https://github.com/ankitkr8540/workspace-archiver'
-              demoLink='https://marketplace.visualstudio.com/items?itemName=AnkitKumar.workspace-archiver'
-            />
-          </Col>
         </Row>
       </Container>
     </Container>

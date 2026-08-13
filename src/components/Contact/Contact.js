@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Col, Container, Row, Form, Button, Alert } from 'react-bootstrap';
 import Particle from '../Particle';
 import './Contact.css'; // Make sure to create this CSS file
 import emailjs from '@emailjs/browser';
-import { FaEnvelope, FaLinkedinIn } from 'react-icons/fa';
+import { FaCalendarAlt } from 'react-icons/fa';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -14,6 +14,36 @@ function Contact() {
   });
   const [validated, setValidated] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
+
+  useEffect(() => {
+    const link = document.createElement('link');
+    link.href = 'https://assets.calendly.com/assets/external/widget.css';
+    link.rel = 'stylesheet';
+    document.head.appendChild(link);
+
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.head.removeChild(link);
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  const openCalendly = () => {
+    window.Calendly.initPopupWidget({
+      url: 'https://calendly.com/027-ankit-kumar/30min',
+    });
+  };
+
+  useEffect(() => {
+    if (submitStatus) {
+      const timer = setTimeout(() => setSubmitStatus(null), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [submitStatus]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -38,13 +68,14 @@ function Contact() {
       email: formData.email,
       subject: formData.subject,
       message: formData.message,
+      reply_to: formData.email,
     };
     emailjs
       .send(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         data,
-        process.env.REACT_APP_EMAILJS_USER_ID
+        { publicKey: process.env.REACT_APP_EMAILJS_USER_ID }
       )
       .then(
         function (response) {
@@ -108,18 +139,10 @@ function Contact() {
               <Button
                 variant='primary'
                 className='submit-btn'
-                href='mailto:027.ankit.kumar@gmail.com'
+                onClick={openCalendly}
               >
-                <FaEnvelope /> Email Me
-              </Button>
-              <Button
-                variant='outline-light'
-                className='contact-secondary-btn'
-                href='https://www.linkedin.com/in/027kumarankit/'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <FaLinkedinIn /> LinkedIn
+                <FaCalendarAlt style={{ marginRight: '8px' }} />
+                Book a 30-min Chat
               </Button>
             </div>
           </Col>
@@ -211,6 +234,10 @@ function Contact() {
                   Please provide a message.
                 </Form.Control.Feedback>
               </Form.Group>
+
+              <p style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.45)', marginBottom: '12px' }}>
+                Auto-reply may land in spam — check your junk folder if you don't see it.
+              </p>
 
               <Button
                 variant='primary'

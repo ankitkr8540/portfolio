@@ -73,7 +73,7 @@ const capabilities = [
   {
     icon: <FaBrain />,
     title: 'Machine Learning',
-    detail: 'Statistics · PyTorch · XGBoost · Forecasting',
+    detail: 'PINN · Statistics · PyTorch · XGBoost · Forecasting',
     eyebrow: 'Core ML foundations',
     summary:
       'My work combines probability, statistics, classical ML, deep learning, time-series methods, and first-principles modeling based on the structure of the problem.',
@@ -81,6 +81,7 @@ const capabilities = [
       {
         title: 'Modeling',
         items: [
+          'Physics-informed modeling and first-principles constraints',
           'Probability, statistical inference, and uncertainty analysis',
           'Supervised learning, feature engineering, and validation',
           'PyTorch neural networks and Transformer models',
@@ -136,7 +137,7 @@ const capabilities = [
     detail: 'AWS · Azure · MLflow · Observability',
     eyebrow: 'Production ML operations',
     summary:
-      'I treat deployment, observability, evaluation, and rollback as part of the model—not as work that starts after modeling is finished.',
+      'I treat deployment, observability, evaluation, and rollback as part of the model, not as work that starts after modeling is finished.',
     sections: [
       {
         title: 'Cloud architecture',

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaQuoteLeft, FaChevronLeft, FaChevronRight, FaLinkedinIn } from 'react-icons/fa';
 import './Testimonials.css';
 
 // Import placeholder images
@@ -9,9 +9,20 @@ import testimonial1 from '../../Assets/Aileen.jpeg';
 import testimonial2 from '../../Assets/Alexandra.jpeg';
 import testimonial3 from '../../Assets/parul.jpeg';
 import testimonial4 from '../../Assets/Rob.jpeg';
+import testimonial_5 from '../../Assets/Dan.jpeg';
 
 function Testimonials() {
   const testimonials = [
+    {
+      id: 0,
+      name: 'Dan Olson',
+      LinkedIn: 'https://www.linkedin.com/in/dan~olson/',
+      designation:
+        'Principal Firmware Engineer | Front End Innovation | Machine Learning',
+      image: testimonial_5,
+      text: "I had the pleasure of working with Ankit for a year on the <span class='purple'>Machine Learning team at Milwaukee Tool</span>, where we collaborated closely on several projects. Ankit is a <span class='purple'>genuinely hard worker</span> who <span class='purple'>consistently goes the extra mile</span> to make his projects successful. <span class='purple'>I recommend Ankit highly</span> and would welcome the chance to <span class='purple'>work with him again</span>.",
+    },
+
     {
       id: 1,
       name: 'Robert Faber',
@@ -52,13 +63,13 @@ function Testimonials() {
 
   const nextSlide = () => {
     setCurrentSlide((prev) =>
-      prev === testimonials.length - 1 ? 0 : prev + 1
+      prev === testimonials.length - 1 ? 0 : prev + 1,
     );
   };
 
   const prevSlide = () => {
     setCurrentSlide((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
+      prev === 0 ? testimonials.length - 1 : prev - 1,
     );
   };
 
@@ -110,22 +121,18 @@ function Testimonials() {
                             />
                           </div>
                           <div className='testimonial-details'>
-                            <h4
-                              className='purple'
-                              onClick={() =>
-                                window.open(testimonial.LinkedIn, '_blank')
-                              }
-                              style={{ cursor: 'pointer' }}
-                              onMouseOver={(e) =>
-                                (e.currentTarget.style.textDecoration =
-                                  'underline')
-                              }
-                              onMouseOut={(e) =>
-                                (e.currentTarget.style.textDecoration = 'none')
-                              }
-                            >
-                              {testimonial.name}
-                            </h4>
+                            <div className='testimonial-name-row'>
+                              <h4 className='purple'>{testimonial.name}</h4>
+                              <a
+                                href={testimonial.LinkedIn}
+                                target='_blank'
+                                rel='noreferrer'
+                                className='testimonial-linkedin'
+                                aria-label={`${testimonial.name} on LinkedIn`}
+                              >
+                                <FaLinkedinIn />
+                              </a>
+                            </div>
                             <p>{testimonial.designation}</p>
                           </div>
                         </div>
