@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.63288a8e.css",
-    "main.js": "/portfolio/static/js/main.eadd2474.js",
+    "main.css": "/portfolio/static/css/main.1b467eec.css",
+    "main.js": "/portfolio/static/js/main.48bd5fc8.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
-    "static/media/full-stack-developers.gif": "/portfolio/static/media/full-stack-developers.51d546ae254659680e11.gif",
+    "static/media/Nature_1.jpeg": "/portfolio/static/media/Nature_1.836f016b352056989677.jpeg",
+    "static/media/Food_1.jpeg": "/portfolio/static/media/Food_1.f9a493f69f451db66058.jpeg",
     "static/media/vscode.jpeg": "/portfolio/static/media/vscode.e65f0039af3f57df02c2.jpeg",
+    "static/media/Food_4.jpeg": "/portfolio/static/media/Food_4.874492141037b22c5f21.jpeg",
     "static/media/Basta_preview.png": "/portfolio/static/media/Basta_preview.609d1339907fa6a553cd.png",
+    "static/media/Food_2.jpeg": "/portfolio/static/media/Food_2.dd75f84ed24850d04774.jpeg",
     "static/media/Kumar_Ankit_purple.pdf": "/portfolio/static/media/Kumar_Ankit_purple.e40d884850382b1895b7.pdf",
     "static/media/Ankit_MLE_Resume.pdf": "/portfolio/static/media/Ankit_MLE_Resume.4ef298edb8b2e4f3cfea.pdf",
-    "static/media/cover-letter-generator.jpeg": "/portfolio/static/media/cover-letter-generator.771cd76be8ed7bce4823.jpeg",
+    "static/media/Nature_2.jpeg": "/portfolio/static/media/Nature_2.190a4ac4f171b0ae4a27.jpeg",
+    "static/media/Food_3.jpeg": "/portfolio/static/media/Food_3.5e69f4485aa0599b04e5.jpeg",
     "static/media/Ankit image.jpg": "/portfolio/static/media/Ankit image.b1f2f507bf137d538738.jpg",
-    "static/media/leetcode-previewed.jpeg": "/portfolio/static/media/leetcode-previewed.24a8d1ddcddb14677f1f.jpeg",
+    "static/media/Dan.jpeg": "/portfolio/static/media/Dan.85366dab2fe906e8ae38.jpeg",
     "static/media/Ankit_cat.png": "/portfolio/static/media/Ankit_cat.8b6341db89c0adbace38.png",
     "static/media/parul.jpeg": "/portfolio/static/media/parul.7fa9fc54d57976bdc2bf.jpeg",
     "static/media/AWS-Dev.png": "/portfolio/static/media/AWS-Dev.da9861980f5b9d7004a6.png",
@@ -21,12 +25,12 @@
     "static/media/developer.png": "/portfolio/static/media/developer.26dadaebe7f30dcddc53.png",
     "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/portfolio/index.html",
-    "main.63288a8e.css.map": "/portfolio/static/css/main.63288a8e.css.map",
-    "main.eadd2474.js.map": "/portfolio/static/js/main.eadd2474.js.map",
+    "main.1b467eec.css.map": "/portfolio/static/css/main.1b467eec.css.map",
+    "main.48bd5fc8.js.map": "/portfolio/static/js/main.48bd5fc8.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63288a8e.css",
-    "static/js/main.eadd2474.js"
+    "static/css/main.1b467eec.css",
+    "static/js/main.48bd5fc8.js"
   ]
 }
