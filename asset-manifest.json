@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5f3d2d86.css",
-    "main.js": "/portfolio/static/js/main.4daa79fb.js",
+    "main.css": "/portfolio/static/css/main.ef143b3b.css",
+    "main.js": "/portfolio/static/js/main.d60367a0.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/Nature_1.jpeg": "/portfolio/static/media/Nature_1.836f016b352056989677.jpeg",
     "static/media/Food_1.jpeg": "/portfolio/static/media/Food_1.f9a493f69f451db66058.jpeg",
@@ -9,7 +9,6 @@
     "static/media/Food_4.jpeg": "/portfolio/static/media/Food_4.874492141037b22c5f21.jpeg",
     "static/media/Basta_preview.png": "/portfolio/static/media/Basta_preview.609d1339907fa6a553cd.png",
     "static/media/Food_2.jpeg": "/portfolio/static/media/Food_2.dd75f84ed24850d04774.jpeg",
-    "static/media/Kumar_Ankit_Resume.pdf": "/portfolio/static/media/Kumar_Ankit_Resume.828f0411f93a3a9f98b9.pdf",
     "static/media/Nature_2.jpeg": "/portfolio/static/media/Nature_2.190a4ac4f171b0ae4a27.jpeg",
     "static/media/Food_3.jpeg": "/portfolio/static/media/Food_3.5e69f4485aa0599b04e5.jpeg",
     "static/media/Ankit image.jpg": "/portfolio/static/media/Ankit image.b1f2f507bf137d538738.jpg",
@@ -24,12 +23,12 @@
     "static/media/developer.png": "/portfolio/static/media/developer.26dadaebe7f30dcddc53.png",
     "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/portfolio/index.html",
-    "main.5f3d2d86.css.map": "/portfolio/static/css/main.5f3d2d86.css.map",
-    "main.4daa79fb.js.map": "/portfolio/static/js/main.4daa79fb.js.map",
+    "main.ef143b3b.css.map": "/portfolio/static/css/main.ef143b3b.css.map",
+    "main.d60367a0.js.map": "/portfolio/static/js/main.d60367a0.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f3d2d86.css",
-    "static/js/main.4daa79fb.js"
+    "static/css/main.ef143b3b.css",
+    "static/js/main.d60367a0.js"
   ]
 }
