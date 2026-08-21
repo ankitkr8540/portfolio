@@ -68,24 +68,24 @@ const capabilities = [
       },
     ],
     evidence:
-      'The Mitra retrieval pipeline improved relevant-context retrieval from 42% to 87% on a manually labeled evaluation set.',
+      'The Mitra retrieval pipeline improved top-5 retrieval hit rate from 42% (21/50) to 86% (43/50) on a fixed labeled 50-query evaluation set.',
   },
   {
     icon: <FaBrain />,
     title: 'Machine Learning',
-    detail: 'PINN · Statistics · PyTorch · XGBoost · Forecasting',
+    detail: 'PINNs · PyTorch · XGBoost · scikit-learn · Forecasting · BLEU',
     eyebrow: 'Core ML foundations',
     summary:
-      'My work combines probability, statistics, classical ML, deep learning, time-series methods, and first-principles modeling based on the structure of the problem.',
+      'My work combines probability, statistics, classical ML, deep learning, time-series methods, and first-principles physics-informed modeling based on the structure of the problem.',
     sections: [
       {
         title: 'Modeling',
         items: [
-          'Physics-informed modeling and first-principles constraints',
-          'Probability, statistical inference, and uncertainty analysis',
-          'Supervised learning, feature engineering, and validation',
-          'PyTorch neural networks and Transformer models',
-          'XGBoost, LSTM, SARIMA, and FinBERT',
+          'Physics-informed PINNs with PyTorch ODEs and collocation',
+          'Forward Euler and Trapezoidal (Tustin) numerical integration',
+          'PyTorch neural networks and Transformer fine-tuning',
+          'XGBoost, LSTM, SARIMA, FinBERT, DistilBERT',
+          'scikit-learn, model fine-tuning, and validation',
         ],
       },
       {
@@ -93,13 +93,13 @@ const capabilities = [
         items: [
           'Holdout design, ablation studies, and counterfactual tests',
           'Error analysis across operating regimes',
-          'Physics-informed ODE and constrained optimization',
+          'BLEU, semantic similarity, and structural preservation metrics',
           'A/B testing, model comparison, and rollback criteria',
         ],
       },
     ],
     evidence:
-      'Delivered embedded thermal prediction at Milwaukee Tool and two-year financial KPI forecasts at Accenture using physics-informed and statistical learning approaches.',
+      'Milwaukee Tool: PyTorch PINN thermal prediction at 2.2°C RMSE. Accenture: pooled LSTM/XGBoost/SARIMA ensemble improved stable-regime directional accuracy from 64% to 78% and transition-period accuracy from 52% to 61% on two-year KPI forecasts.',
   },
   {
     icon: <FaDatabase />,
@@ -129,7 +129,7 @@ const capabilities = [
       },
     ],
     evidence:
-      "Built Mitra's 50K+ chunk corpus pipeline and Azure-based experimental ETL that cut Milwaukee Tool model iteration from two hours to 40 minutes.",
+      "Built Mitra's 50K+ chunk corpus pipeline, Azure-based ETL that cut Milwaukee Tool model iteration from two hours to 40 minutes, and a PySpark/S3 point-in-time pipeline standardizing fundamentals for ~9,500 public companies at Accenture.",
   },
   {
     icon: <FaCloud />,
@@ -164,7 +164,7 @@ const capabilities = [
   {
     icon: <FaCode />,
     title: 'Languages & Systems',
-    detail: 'Python · SQL · C/C++ · Distributed Systems',
+    detail: 'Python · SQL · C · Pandas · NumPy · Distributed Systems',
     eyebrow: 'From model to running system',
     summary:
       'I work across modeling, data, cloud, and embedded boundaries, choosing the language and architecture that fit the operational constraints.',
@@ -173,9 +173,9 @@ const capabilities = [
         title: 'Languages',
         items: [
           'Python for ML, data engineering, and services',
+          'Pandas and NumPy for data manipulation and numerical computing',
           'SQL for analytics and transformation',
-          'C and C++ for performance and embedded inference',
-          'JavaScript and React for ML-facing applications',
+          'C for performance-critical and embedded inference',
         ],
       },
       {
@@ -189,7 +189,7 @@ const capabilities = [
       },
     ],
     evidence:
-      'Translated a PyTorch thermal model into an embedded-C specification and built a time-causal Python twin to verify firmware behavior.',
+      'Translated a PyTorch thermal model into an embedded-C specification and built a time-causal Python reference twin to verify firmware behavior before field validation.',
   },
 ];
 

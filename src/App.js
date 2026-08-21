@@ -5,10 +5,10 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer';
-import Resume from './components/Resume/ResumeNew';
-import Blogs from './components/Blogs/blog';
+import BlogList from './components/Blogs/BlogList';
+import BlogPost from './components/Blogs/BlogPost';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
   Routes,
   Navigate,
@@ -40,8 +40,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/project' element={<Projects />} />
           <Route path='/about' element={<About />} />
-          <Route path='/resume' element={<Resume />} />
-          <Route path='/blogs' element={<Blogs />} />
+          <Route path='/blogs' element={<BlogList />} />
+          <Route path='/blogs/:slug' element={<BlogPost />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='*' element={<Navigate to='/' />} />
         </Routes>

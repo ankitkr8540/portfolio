@@ -18,8 +18,8 @@ const highlights = [
     kicker: 'Mitra · Founder & Lead ML Engineer',
     headline: 'Bounded agentic RAG platform',
     context:
-      'LangGraph agent with hybrid retrieval, cross-encoder reranking, and a DistilBERT + PPO RLHF feedback loop.',
-    metric: '42% → 87% retrieval relevance · 200+ alpha users',
+      'LangGraph agent with hybrid retrieval, cross-encoder reranking, and a DistilBERT feedback loop.',
+    metric: '42% → 86% retrieval hit rate · 78% positive ratings · 200+ students',
   },
   {
     kicker: 'PyLinguist · Research · ACL BEA',
@@ -31,45 +31,62 @@ const highlights = [
 ];
 
 const skills = [
-  // Req 1 — large-scale data platforms
+  // Languages & Data
+  'Python',
+  'SQL',
+  'C',
+  'Pandas',
+  'NumPy',
   'PySpark',
-  'AWS Glue',
-  'Athena',
-  'Parquet',
   'ETL Pipelines',
-  'Event-Driven Pipelines',
-  // Req 2 — dataset analysis & data quality
-  'Schema Validation',
-  'Embedding Drift',
-  'Data Quality Monitoring',
-  'Incremental Parquet Updates',
-  'Source Provenance',
-  // Req 3 — metrics & anomaly detection
-  'Anomaly Detection',
+  'Parquet',
+  // GenAI & Agents
+  'RAG',
+  'LangGraph',
+  'LangChain',
+  'Pydantic',
+  'Prompt Engineering',
+  'Evidence-Gated Generation',
+  'LLM Evaluation',
+  'Agentic Systems',
+  // Retrieval & NLP
+  'Hugging Face Transformers',
+  'SentenceTransformers',
+  'FAISS HNSW',
+  'Hybrid Search',
+  'Weighted RRF',
+  'Cross-Encoder Reranking',
+  'FinBERT',
+  'DistilBERT',
+  // ML & Deep Learning
+  'PyTorch',
+  'scikit-learn',
+  'XGBoost',
+  'LSTM',
+  'SARIMA',
+  'Model Fine-Tuning',
+  'Time-Series Forecasting',
+  // Physics & Numerical Modeling
+  'PINNs',
+  'PyTorch ODEs',
+  'Monte Carlo Simulation',
+  'Ablation & Counterfactual Testing',
+  // Cloud & MLOps
+  'AWS SageMaker',
+  'AWS Lambda',
+  'AWS Glue',
   'CloudWatch',
   'MLflow',
   'LangSmith',
-  // Req 4 — experimental design & stats
-  'Ablation Studies',
-  'A/B Testing',
-  'Holdout Design',
-  'Statistical Sampling',
-  'Evaluation Frameworks',
-  // Req 6 — ML/LLM workflows
-  'Training Data Preparation',
-  'RLHF',
-  'PPO',
-  'Reward Modeling',
-  'Feedback Loops',
-  'LLM Evaluation',
-  'Agentic Systems',
-  'LangGraph',
-  'RAG',
-  'SentenceTransformers',
-  'Cross-Encoder Reranking',
-  'FAISS HNSW',
-  'PyTorch',
-  'AWS SageMaker',
+  'Azure',
+  // Software & Deployment
+  'FastAPI',
+  'Docker',
+  'Pytest',
+  'GitHub Actions',
+  'CI/CD',
+  'Amazon ECS Fargate',
+  'Streamlit',
 ];
 
 function Home2() {

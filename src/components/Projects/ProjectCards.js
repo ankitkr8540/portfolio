@@ -5,8 +5,12 @@ import { CgWebsite } from 'react-icons/cg';
 import { BsGithub } from 'react-icons/bs';
 
 function ProjectCards(props) {
-  return (
-    <Card className='project-card-view'>
+  const cardContent = (
+    <Card
+      className='project-card-view'
+      style={props.onClick ? { cursor: 'pointer' } : undefined}
+      onClick={props.onClick}
+    >
       {props.imgPath ? (
         <Card.Img variant='top' src={props.imgPath} alt={props.title} />
       ) : (
@@ -32,32 +36,41 @@ function ProjectCards(props) {
             ))}
           </div>
         )}
-        <div className='project-links'>
-          {props.ghLink && (
-            <Button
-              variant='primary'
-              href={props.ghLink}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <BsGithub /> &nbsp;
-              {props.isBlog ? 'Blog' : 'GitHub'}
-            </Button>
-          )}
+        {props.onClick ? (
+          <div className='project-links'>
+            <Button variant='primary'>View Details &rarr;</Button>
+          </div>
+        ) : (
+          <div className='project-links'>
+            {props.ghLink && (
+              <Button
+                variant='primary'
+                href={props.ghLink}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <BsGithub /> &nbsp;
+                {props.isBlog ? 'Blog' : 'GitHub'}
+              </Button>
+            )}
 
-          {!props.isBlog && props.demoLink && (
-            <Button
-              variant='primary'
-              href={props.demoLink}
-              target='_blank'
-              rel='noreferrer'
-            >
-              <CgWebsite /> &nbsp;Demo
-            </Button>
-          )}
-        </div>
+            {!props.isBlog && props.demoLink && (
+              <Button
+                variant='primary'
+                href={props.demoLink}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <CgWebsite /> &nbsp;Demo
+              </Button>
+            )}
+          </div>
+        )}
       </Card.Body>
     </Card>
   );
+
+  return cardContent;
 }
+
 export default ProjectCards;

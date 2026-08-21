@@ -4,7 +4,7 @@ import {
   FaChartLine,
   FaCheckCircle,
   FaCloudUploadAlt,
-  FaGithub,
+  FaDocker,
   FaServer,
 } from 'react-icons/fa';
 import CapabilityGrid from './CapabilityGrid';
@@ -96,16 +96,16 @@ const platforms = [
   },
   {
     icon: <FaServer />,
-    title: 'CloudWatch · CI/CD',
-    detail: 'Monitoring · Testing · Delivery',
+    title: 'CloudWatch · CI/CD · ECR · ECS',
+    detail: 'Monitoring · GitHub Actions · Delivery · Container Registry',
     eyebrow: 'Production reliability',
     summary:
-      'I use automated delivery and operational telemetry to make model releases observable, testable, and reversible.',
+      'I use automated delivery, container-based deployment, and operational telemetry to make model releases observable, testable, and reversible.',
     sections: [
       {
         title: 'Monitoring',
         items: [
-          'Structured logs, latency metrics, and alarms',
+          'Structured logs, latency metrics, and CloudWatch alarms',
           'Pipeline and endpoint failure analysis',
           'Agent behavior and grounding telemetry',
         ],
@@ -113,14 +113,14 @@ const platforms = [
       {
         title: 'Delivery',
         items: [
-          'Automated unit, integration, and regression tests',
-          'Versioned artifacts and deployment checkpoints',
-          'Rollback paths for failed releases',
+          'GitHub Actions CI/CD with Pytest regression gates',
+          'Versioned ECR images and S3 artifact checkpoints',
+          'ECS Fargate deployments with rollback paths',
         ],
       },
     ],
     evidence:
-      'Supported controlled SageMaker deployments and CloudWatch-monitored evaluation of Mitra retrieval and agent behavior.',
+      'Deployed Mitra as a Dockerized FastAPI service on ECS Fargate with GitHub Actions CI/CD, versioned ECR artifacts, and CloudWatch monitoring.',
   },
   {
     icon: <FaCheckCircle />,
@@ -151,32 +151,32 @@ const platforms = [
       'Used Pydantic-validated state and structured routing throughout Mitra ingestion and agent execution.',
   },
   {
-    icon: <FaGithub />,
-    title: 'Git · GitHub',
-    detail: 'Versioning · Review · Automation',
-    eyebrow: 'Collaborative engineering',
+    icon: <FaDocker />,
+    title: 'FastAPI · Docker · Streamlit',
+    detail: 'REST APIs · Containers · ML Applications',
+    eyebrow: 'Serving and interfaces',
     summary:
-      'I use version control as the operating record for code, experiments, review decisions, and production changes.',
+      'I build production-grade REST services and containerized ML applications, from cloud-hosted inference endpoints to interactive telemetry tools.',
     sections: [
       {
-        title: 'Development workflow',
+        title: 'API & containerization',
         items: [
-          'Feature branches and focused commits',
-          'Peer review and traceable technical decisions',
-          'Release tags and reproducible source states',
+          'FastAPI services for ML inference and agent endpoints',
+          'Docker containerization and image versioning',
+          'REST API design with typed request/response schemas',
         ],
       },
       {
-        title: 'Automation',
+        title: 'ML applications',
         items: [
-          'Build and test checks before deployment',
-          'Artifact packaging and release workflows',
-          'Issue-driven iteration and documentation',
+          'Streamlit dashboards for telemetry replay and model inspection',
+          'Interactive tooling for firmware and field-data validation',
+          'Internal interfaces for experiment comparison and review',
         ],
       },
     ],
     evidence:
-      'Applied across research, cloud ML, and embedded-model delivery to keep changes reviewable and reproducible.',
+      'Built a Dockerized FastAPI service for Mitra and a Streamlit telemetry replay tool at Milwaukee Tool to catch release-blocking firmware defects.',
   },
 ];
 

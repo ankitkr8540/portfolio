@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCogs, FaComments, FaLanguage, FaRobot } from 'react-icons/fa';
+import { FaCogs, FaComments, FaKeyboard, FaLanguage, FaRobot } from 'react-icons/fa';
 import CapabilityGrid from './CapabilityGrid';
 
 const aiTools = [
@@ -35,7 +35,7 @@ const aiTools = [
   },
   {
     icon: <FaRobot />,
-    title: 'Claude',
+    title: 'Claude · Claude 3.5 Haiku',
     detail: 'Long Context · Review · Model Comparison',
     eyebrow: 'Independent model perspective',
     summary:
@@ -53,15 +53,15 @@ const aiTools = [
       {
         title: 'Evaluation discipline',
         items: [
-          'Temperature-controlled comparisons',
-          'Few-shot sensitivity testing',
+          'Temperature-controlled comparisons with GPT-4o',
+          'Few-shot sensitivity testing across seven languages',
           'Syntax and structural-preservation checks',
-          'Provider-specific error analysis',
+          'Provider-specific error categorization',
         ],
       },
     ],
     evidence:
-      'Claude 3.5 Haiku was evaluated alongside GPT-4o in PyLinguist, including analysis of how additional few-shot examples changed performance.',
+      'Claude 3.5 Haiku was evaluated alongside GPT-4o in PyLinguist across 70 held-out programs, including analysis of how few-shot examples shifted composite evaluation scores.',
   },
   {
     icon: <FaLanguage />,
@@ -92,6 +92,36 @@ const aiTools = [
     ],
     evidence:
       'Used as one of the refinement models in PyLinguist\'s seven-language translation and evaluation pipeline.',
+  },
+  {
+    icon: <FaKeyboard />,
+    title: 'Cursor · Copilot · Codex',
+    detail: 'AI Coding · Debugging · Refactoring · Productivity',
+    eyebrow: 'AI-assisted engineering',
+    summary:
+      'I use AI coding assistants as a daily force multiplier — for generation, debugging, test scaffolding, and refactoring — while staying accountable for correctness, architecture, and production quality.',
+    sections: [
+      {
+        title: 'Development workflow',
+        items: [
+          'Cursor for context-aware code generation and multi-file edits',
+          'GitHub Copilot for inline completions during active development',
+          'Codex-style prompting for boilerplate, schema generation, and CLI tooling',
+          'AI-assisted debugging — feeding tracebacks and logs for root-cause suggestions',
+        ],
+      },
+      {
+        title: 'Productivity & engineering acceleration',
+        items: [
+          'Documentation search and synthesis across large technical corpora',
+          'Experiment analysis — summarizing MLflow run comparisons and metric tables',
+          'SQL and data exploration — generating and refining PySpark/SQL queries',
+          'Test scaffolding and refactoring suggestions reviewed before acceptance',
+        ],
+      },
+    ],
+    evidence:
+      'Used Cursor and Copilot throughout Mitra and Milwaukee Tool development to accelerate retrieval pipeline construction, embedded C specification review, and experiment iteration.',
   },
   {
     icon: <FaCogs />,
