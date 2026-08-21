@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ef143b3b.css",
-    "main.js": "/portfolio/static/js/main.d60367a0.js",
+    "main.css": "/portfolio/static/css/main.09179847.css",
+    "main.js": "/portfolio/static/js/main.9ec56d14.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/Nature_1.jpeg": "/portfolio/static/media/Nature_1.836f016b352056989677.jpeg",
     "static/media/Food_1.jpeg": "/portfolio/static/media/Food_1.f9a493f69f451db66058.jpeg",
@@ -11,7 +11,9 @@
     "static/media/Food_2.jpeg": "/portfolio/static/media/Food_2.dd75f84ed24850d04774.jpeg",
     "static/media/Nature_2.jpeg": "/portfolio/static/media/Nature_2.190a4ac4f171b0ae4a27.jpeg",
     "static/media/Food_3.jpeg": "/portfolio/static/media/Food_3.5e69f4485aa0599b04e5.jpeg",
+    "static/media/cover-letter-generator.jpeg": "/portfolio/static/media/cover-letter-generator.771cd76be8ed7bce4823.jpeg",
     "static/media/Ankit image.jpg": "/portfolio/static/media/Ankit image.b1f2f507bf137d538738.jpg",
+    "static/media/leetcode-previewed.jpeg": "/portfolio/static/media/leetcode-previewed.24a8d1ddcddb14677f1f.jpeg",
     "static/media/Dan.jpeg": "/portfolio/static/media/Dan.85366dab2fe906e8ae38.jpeg",
     "static/media/Ankit_cat.png": "/portfolio/static/media/Ankit_cat.8b6341db89c0adbace38.png",
     "static/media/parul.jpeg": "/portfolio/static/media/parul.7fa9fc54d57976bdc2bf.jpeg",
@@ -23,12 +25,12 @@
     "static/media/developer.png": "/portfolio/static/media/developer.26dadaebe7f30dcddc53.png",
     "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/portfolio/index.html",
-    "main.ef143b3b.css.map": "/portfolio/static/css/main.ef143b3b.css.map",
-    "main.d60367a0.js.map": "/portfolio/static/js/main.d60367a0.js.map",
+    "main.09179847.css.map": "/portfolio/static/css/main.09179847.css.map",
+    "main.9ec56d14.js.map": "/portfolio/static/js/main.9ec56d14.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef143b3b.css",
-    "static/js/main.d60367a0.js"
+    "static/css/main.09179847.css",
+    "static/js/main.9ec56d14.js"
   ]
 }
