@@ -38,14 +38,33 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s ease !important;
+}
+
+.testimonial-content::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  background: linear-gradient(
+    115deg,
+    transparent 35%,
+    rgba(214, 143, 247, 0.1) 50%,
+    transparent 65%
+  );
+  transform: translateX(-110%);
+  transition: transform 0.55s ease;
+  pointer-events: none;
+}
+
+.testimonial-content:hover::after {
+  transform: translateX(110%);
 }
 
 .testimonial-content:hover {
-  background: rgba(40, 30, 60, 0.7) !important;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5) !important;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(200, 137, 230, 0.5) !important;
+  transform: translateY(-6px) scale(1.02) !important;
+  border-color: #d677ff !important;
+  box-shadow: 0 12px 30px rgba(164, 63, 211, 0.3) !important;
 }
 
 .quote-icon {

@@ -38,7 +38,6 @@ function Home() {
                 requirement to production monitoring, I own the whole thing.
               </p>
 
-
               <div className='aws-certs'>
                 <a
                   href='https://cp.certmetrics.com/amazon/en/public/verify/credential/a780eb1a5232418bb6a9d3aa70464579'

@@ -8,7 +8,7 @@ import bastaPreview from '../../Assets/Basta_preview.png';
 import coverLetterPreview from '../../Assets/cover-letter-generator.jpeg';
 import leetcodePreview from '../../Assets/leetcode-previewed.jpeg';
 
-const EXPERIENCES = [
+export const EXPERIENCES = [
   {
     visualLabel: 'AGENTIC RAG',
     kicker: 'FOUNDER & LEAD ML ENGINEER · MASON INNOVATION EXCHANGE, GMU',

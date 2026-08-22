@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import myImg from '../../Assets/Ankit_cat.png';
 import Tilt from 'react-parallax-tilt';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import Testimonials from './Testimonials';
+import ExperienceModal from '../Projects/ExperienceModal';
+import { EXPERIENCES } from '../Projects/Projects';
 
 const highlights = [
   {
@@ -13,6 +15,7 @@ const highlights = [
     context:
       'End-to-end ownership: PyTorch model → Azure ETL → embedded C → production firmware.',
     metric: '30 days → 3 days validation · $100K projected savings',
+    experience: EXPERIENCES[1],
   },
   {
     kicker: 'Mitra · Founder & Lead ML Engineer',
@@ -20,6 +23,7 @@ const highlights = [
     context:
       'LangGraph agent with hybrid retrieval, cross-encoder reranking, and a DistilBERT feedback loop.',
     metric: '42% → 86% retrieval hit rate · 78% positive ratings · 200+ students',
+    experience: EXPERIENCES[0],
   },
   {
     kicker: 'PyLinguist · Research · ACL BEA',
@@ -27,6 +31,7 @@ const highlights = [
     context:
       'Two-stage translation pipeline with back-translation evaluation scaled across 7 languages and 550K+ samples.',
     metric: 'Submitted to ACL BEA · 7 languages · 550K+ samples',
+    experience: EXPERIENCES[3],
   },
 ];
 
@@ -90,6 +95,8 @@ const skills = [
 ];
 
 function Home2() {
+  const [modal, setModal] = useState({ show: false, experience: null });
+
   return (
     <Container fluid className='home-about-section' id='about'>
       <Container>
@@ -129,7 +136,11 @@ function Home2() {
         <Row className='highlight-grid'>
           {highlights.map((h, i) => (
             <Col md={4} key={i} className='highlight-card-col'>
-              <div className='highlight-card'>
+              <div
+                className='highlight-card'
+                onClick={() => setModal({ show: true, experience: h.experience })}
+                style={{ cursor: 'pointer' }}
+              >
                 <span className='highlight-kicker'>{h.kicker}</span>
                 <h3 className='highlight-headline'>{h.headline}</h3>
                 <p className='highlight-context'>{h.context}</p>
@@ -186,6 +197,11 @@ function Home2() {
           </Col>
         </Row>
       </Container>
+      <ExperienceModal
+        show={modal.show}
+        onHide={() => setModal({ show: false, experience: null })}
+        experience={modal.experience}
+      />
     </Container>
   );
 }

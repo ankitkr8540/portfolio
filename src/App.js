@@ -8,12 +8,13 @@ import Footer from './components/Footer';
 import BlogList from './components/Blogs/BlogList';
 import BlogPost from './components/Blogs/BlogPost';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Navigate,
 } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
+import OpenToWork from './components/Home/OpenToWork';
 import './style.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,11 +24,28 @@ function App() {
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
+    const start = Date.now();
+    const MIN_MS = 400;
 
-    return () => clearTimeout(timer);
+    const dismiss = () => {
+      const elapsed = Date.now() - start;
+      const remaining = Math.max(0, MIN_MS - elapsed);
+      const t = setTimeout(() => upadateLoad(false), remaining);
+      return t;
+    };
+
+    if (document.readyState === 'complete') {
+      const t = dismiss();
+      return () => clearTimeout(t);
+    }
+
+    let timeoutId;
+    const handleLoad = () => { timeoutId = dismiss(); };
+    window.addEventListener('load', handleLoad);
+    return () => {
+      window.removeEventListener('load', handleLoad);
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   return (
@@ -35,6 +53,7 @@ function App() {
       <Preloader load={load} />
       <div className='App' id={load ? 'no-scroll' : 'scroll'}>
         <Navbar />
+        <OpenToWork />
         <ScrollToTop />
         <Routes>
           <Route path='/' element={<Home />} />
