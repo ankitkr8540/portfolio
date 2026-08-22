@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[2417],{32417:(e,o,r)=>{r.d(o,{createCynefinServices:()=>s.t});var s=r(58634);r(98667)}}]);
