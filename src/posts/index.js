@@ -1,5 +1,8 @@
-import latexRaw from './latex-setup-vscode-macos.md';
-import knnRaw from './knn-basics-to-weighted.md';
+const markdownContext = require.context('./', false, /\.md$/);
+const markdownModules = markdownContext.keys().map((filePath) => {
+  const module = markdownContext(filePath);
+  return module.default || module;
+});
 
 function parseFrontmatter(raw) {
   const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
@@ -31,7 +34,7 @@ function parseFrontmatter(raw) {
   return { meta, content: match[2].trim() };
 }
 
-export const posts = [latexRaw, knnRaw]
+export const posts = markdownModules
   .map(parseFrontmatter)
   .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date));
 

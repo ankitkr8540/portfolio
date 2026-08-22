@@ -2,8 +2,82 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { FaTwitter, FaLinkedinIn, FaLink } from 'react-icons/fa';
+import mermaid from 'mermaid';
+import { FaTwitter, FaLinkedinIn, FaLink, FaTimes } from 'react-icons/fa';
 import { getPostBySlug } from '../../posts';
+
+// ── Mermaid ────────────────────────────────────────────────────────────────
+
+mermaid.initialize({ startOnLoad: false, theme: 'dark' });
+
+let mermaidCounter = 0;
+
+function MermaidDiagram({ chart }) {
+  const [svg, setSvg] = useState('');
+  const [error, setError] = useState('');
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  useEffect(() => {
+    const id = `mermaid-${++mermaidCounter}`;
+    mermaid
+      .render(id, chart)
+      .then(({ svg }) => setSvg(svg))
+      .catch((err) => setError(err.message));
+  }, [chart]);
+
+  useEffect(() => {
+    if (!isExpanded) return undefined;
+
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') setIsExpanded(false);
+    };
+    document.addEventListener('keydown', closeOnEscape);
+    return () => document.removeEventListener('keydown', closeOnEscape);
+  }, [isExpanded]);
+
+  if (error) return <pre style={{ color: '#f87171' }}>{error}</pre>;
+  return (
+    <>
+      <div
+        className='mermaid-diagram'
+        role='button'
+        tabIndex={0}
+        aria-label='Enlarge Mermaid diagram'
+        onClick={() => setIsExpanded(true)}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') setIsExpanded(true);
+        }}
+      >
+        <div dangerouslySetInnerHTML={{ __html: svg }} />
+      </div>
+
+      {isExpanded && (
+        <div
+          className='lightbox-overlay'
+          role='dialog'
+          aria-modal='true'
+          aria-label='Enlarged Mermaid diagram'
+          onClick={(event) => {
+            if (event.target === event.currentTarget) setIsExpanded(false);
+          }}
+        >
+          <button
+            type='button'
+            className='lightbox-close'
+            aria-label='Close enlarged diagram'
+            onClick={() => setIsExpanded(false)}
+          >
+            <FaTimes />
+          </button>
+          <div
+            className='mermaid-lightbox-svg'
+            dangerouslySetInnerHTML={{ __html: svg }}
+          />
+        </div>
+      )}
+    </>
+  );
+}
 
 // ── Utilities ──────────────────────────────────────────────────────────────
 
@@ -23,8 +97,8 @@ function extractHeadings(content) {
   });
 }
 
-// Custom ReactMarkdown heading renderers — inject id so TOC links + observer work
-const headingComponents = {
+// Custom ReactMarkdown renderers
+const markdownComponents = {
   h2: ({ children }) => {
     const text = typeof children === 'string' ? children : String(children);
     return <h2 id={slugify(text)}>{children}</h2>;
@@ -32,6 +106,13 @@ const headingComponents = {
   h3: ({ children }) => {
     const text = typeof children === 'string' ? children : String(children);
     return <h3 id={slugify(text)}>{children}</h3>;
+  },
+  code({ inline, className, children }) {
+    const language = (className || '').replace('language-', '');
+    if (!inline && language === 'mermaid') {
+      return <MermaidDiagram chart={String(children).trim()} />;
+    }
+    return <code className={className}>{children}</code>;
   },
 };
 
@@ -79,15 +160,15 @@ function TableOfContents({ headings, activeId, onLinkClick }) {
   };
 
   return (
-    <aside className="blog-toc">
-      <p className="blog-toc-label">On This Page</p>
-      <ul className="blog-toc-list">
+    <aside className='blog-toc'>
+      <p className='blog-toc-label'>On This Page</p>
+      <ul className='blog-toc-list'>
         {headings.map((h) => (
           <li
             key={h.id}
             className={`blog-toc-item${activeId === h.id ? ' active' : ''}`}
           >
-            <button className="blog-toc-link" onClick={() => scrollTo(h.id)}>
+            <button className='blog-toc-link' onClick={() => scrollTo(h.id)}>
               {h.text}
             </button>
           </li>
@@ -103,9 +184,7 @@ function ShareBar({ title, excerpt, tags }) {
   const [copied, setCopied] = useState(false);
   const url = window.location.href;
 
-  const hashtags = (tags || [])
-    .map((t) => t.replace(/\s+/g, ''))
-    .join(',');
+  const hashtags = (tags || []).map((t) => t.replace(/\s+/g, '')).join(',');
 
   const tweetText = `${title}\n\n${excerpt}`;
 
@@ -129,27 +208,27 @@ function ShareBar({ title, excerpt, tags }) {
   };
 
   return (
-    <div className="blog-share-bar">
-      <span className="blog-share-label">Share</span>
+    <div className='blog-share-bar'>
+      <span className='blog-share-label'>Share</span>
       <a
         href={twitterUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="blog-share-btn"
-        aria-label="Share on X"
+        target='_blank'
+        rel='noreferrer'
+        className='blog-share-btn'
+        aria-label='Share on X'
       >
         <FaTwitter size={14} />
       </a>
       <a
         href={linkedInUrl}
-        target="_blank"
-        rel="noreferrer"
-        className="blog-share-btn"
-        aria-label="Share on LinkedIn"
+        target='_blank'
+        rel='noreferrer'
+        className='blog-share-btn'
+        aria-label='Share on LinkedIn'
       >
         <FaLinkedinIn size={14} />
       </a>
-      <button className="blog-share-copy" onClick={copyLink}>
+      <button className='blog-share-copy' onClick={copyLink}>
         <FaLink size={11} />
         {copied ? 'Copied!' : 'Copy link'}
       </button>
@@ -180,7 +259,8 @@ function BlogPost() {
 
       // At bottom of page → last heading is active
       const atBottom =
-        window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 60;
+        window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight - 60;
       if (atBottom) {
         setActiveId(headings[headings.length - 1].id);
         return;
@@ -204,10 +284,17 @@ function BlogPost() {
 
   if (!post) {
     return (
-      <div className="blog-page">
-        <div className="blog-page-inner" style={{ textAlign: 'center', paddingTop: '80px' }}>
+      <div className='blog-page'>
+        <div
+          className='blog-page-inner'
+          style={{ textAlign: 'center', paddingTop: '80px' }}
+        >
           <h2 style={{ color: 'white' }}>Post not found.</h2>
-          <button className="blog-back-btn" onClick={() => navigate('/blogs')} style={{ marginTop: '16px' }}>
+          <button
+            className='blog-back-btn'
+            onClick={() => navigate('/blogs')}
+            style={{ marginTop: '16px' }}
+          >
             ← Back to Blog
           </button>
         </div>
@@ -217,21 +304,22 @@ function BlogPost() {
 
   const { title, date, tags, excerpt } = post.meta;
   const formattedDate = new Date(date).toLocaleDateString('en-US', {
-    year: 'numeric', month: 'long', day: 'numeric',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
   });
   const readingTime = Math.ceil(post.content.split(/\s+/).length / 200);
 
   return (
-    <div className="blog-page">
-      <div className="blog-page-inner">
-
-        <div className="blog-post-nav">
-          <button className="blog-back-btn" onClick={() => navigate('/blogs')}>
+    <div className='blog-page'>
+      <div className='blog-page-inner'>
+        <div className='blog-post-nav'>
+          <button className='blog-back-btn' onClick={() => navigate('/blogs')}>
             ← All Posts
           </button>
         </div>
 
-        <div className="blog-post-layout">
+        <div className='blog-post-layout'>
           {/* ── Sidebar TOC (left) ── */}
           <TableOfContents
             headings={headings}
@@ -243,27 +331,34 @@ function BlogPost() {
           />
 
           {/* ── Main article ── */}
-          <article className="blog-post-article">
-            <header className="blog-post-article-header">
-              <div className="blog-article-tags" style={{ marginBottom: '16px' }}>
+          <article className='blog-post-article'>
+            <header className='blog-post-article-header'>
+              <div
+                className='blog-article-tags'
+                style={{ marginBottom: '16px' }}
+              >
                 {tags.map((tag) => (
-                  <span key={tag} className="blog-tag">{tag}</span>
+                  <span key={tag} className='blog-tag'>
+                    {tag}
+                  </span>
                 ))}
               </div>
-              <h1 className="blog-post-article-title">{title}</h1>
-              <div className="blog-article-meta" style={{ marginTop: '12px' }}>
-                <span className="blog-article-date">{formattedDate}</span>
-                <span className="blog-article-dot">·</span>
-                <span className="blog-article-read">{readingTime} min read</span>
+              <h1 className='blog-post-article-title'>{title}</h1>
+              <div className='blog-article-meta' style={{ marginTop: '12px' }}>
+                <span className='blog-article-date'>{formattedDate}</span>
+                <span className='blog-article-dot'>·</span>
+                <span className='blog-article-read'>
+                  {readingTime} min read
+                </span>
               </div>
             </header>
 
             <ShareBar title={title} excerpt={excerpt} tags={tags} />
 
-            <div className="blog-post-body">
+            <div className='blog-post-body'>
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
-                components={headingComponents}
+                components={markdownComponents}
               >
                 {post.content}
               </ReactMarkdown>
@@ -271,12 +366,13 @@ function BlogPost() {
           </article>
         </div>
 
-        <div className="blog-comments-section">
+        <div className='blog-comments-section'>
           <h2>Discussion</h2>
-          <p className="blog-comments-hint">Sign in with GitHub to leave a comment.</p>
+          <p className='blog-comments-hint'>
+            Sign in with GitHub to leave a comment.
+          </p>
           <GiscusComments />
         </div>
-
       </div>
     </div>
   );

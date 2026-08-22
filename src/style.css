@@ -69,6 +69,7 @@ button:focus {
 /* --------- */
 /* Navbar Section  */
 /* --------- */
+/* --------- */
 .sticky {
   background-color: #1b1a2ea9 !important;
   transition: all 0.3s ease-out 0s !important;
@@ -586,8 +587,12 @@ button:focus {
 }
 
 @keyframes marquee-scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .skills-strip span {
@@ -790,7 +795,11 @@ button:focus {
   padding: 24px;
   border-bottom: 1px solid rgba(200, 137, 230, 0.25);
   background:
-    radial-gradient(circle at top right, rgba(199, 112, 240, 0.28), transparent 50%),
+    radial-gradient(
+      circle at top right,
+      rgba(199, 112, 240, 0.28),
+      transparent 50%
+    ),
     linear-gradient(135deg, rgba(31, 15, 49, 0.95), rgba(12, 5, 19, 0.95));
 }
 
@@ -1078,7 +1087,11 @@ button:focus {
   border: 1px solid rgba(211, 126, 250, 0.65) !important;
   border-radius: 14px !important;
   background:
-    radial-gradient(circle at top right, rgba(151, 56, 197, 0.22), transparent 38%),
+    radial-gradient(
+      circle at top right,
+      rgba(151, 56, 197, 0.22),
+      transparent 38%
+    ),
     #130b20 !important;
   box-shadow: 0 24px 90px rgba(0, 0, 0, 0.6);
 }
@@ -1201,7 +1214,9 @@ button:focus {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-  transition: transform 0.4s ease, filter 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    filter 0.4s ease;
   filter: brightness(0.88);
 }
 
@@ -1270,8 +1285,12 @@ button:focus {
   background: rgba(199, 112, 240, 0.35);
 }
 
-.lightbox-prev { left: 20px; }
-.lightbox-next { right: 20px; }
+.lightbox-prev {
+  left: 20px;
+}
+.lightbox-next {
+  right: 20px;
+}
 
 .lightbox-counter {
   position: absolute;
@@ -1606,7 +1625,9 @@ button:focus {
   border-left: none; /* No left border */
   border-radius: 24px;
   box-sizing: border-box;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition:
+    background-color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
   transform: scaleX(0); /* Initially scaled to 0 */
   transform-origin: left; /* Scale from the right */
 }
@@ -1627,7 +1648,13 @@ button:focus {
   color: white;
   border: 1px solid rgba(211, 126, 250, 0.65) !important;
   border-radius: 14px !important;
-  background: radial-gradient(circle at top right, rgba(151, 56, 197, 0.22), transparent 38%), #130b20 !important;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(151, 56, 197, 0.22),
+      transparent 38%
+    ),
+    #130b20 !important;
   box-shadow: 0 24px 90px rgba(0, 0, 0, 0.6);
   max-height: 88vh;
   display: flex;
@@ -1662,7 +1689,7 @@ button:focus {
 
 .exp-modal-period {
   display: block;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.82rem;
   margin-top: 3px;
 }
@@ -1690,13 +1717,13 @@ button:focus {
   flex-direction: column;
   gap: 4px;
   overflow-y: auto;
-  background: rgba(0,0,0,0.15);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .exp-nav-btn {
   background: none;
   border: none;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   text-align: left;
   padding: 10px 20px;
   font-size: 0.88rem;
@@ -1707,14 +1734,14 @@ button:focus {
 }
 
 .exp-nav-btn:hover {
-  color: rgba(255,255,255,0.85);
-  background: rgba(199,112,240,0.06);
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(199, 112, 240, 0.06);
 }
 
 .exp-nav-btn.active {
   color: #c770f0;
   border-left-color: #c770f0;
-  background: rgba(199,112,240,0.1);
+  background: rgba(199, 112, 240, 0.1);
   font-weight: 600;
 }
 
@@ -1732,7 +1759,7 @@ button:focus {
 }
 
 .exp-content-para {
-  color: rgba(255,255,255,0.78);
+  color: rgba(255, 255, 255, 0.78);
   line-height: 1.72;
   margin-bottom: 1rem;
 }
@@ -1753,7 +1780,7 @@ button:focus {
 .exp-subsection-list {
   margin: 0;
   padding-left: 1.25rem;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   line-height: 1.75;
 }
 
@@ -1770,9 +1797,9 @@ button:focus {
 
 .exp-metric-card {
   padding: 16px 18px;
-  border: 1px solid rgba(199,112,240,0.3);
+  border: 1px solid rgba(199, 112, 240, 0.3);
   border-radius: 10px;
-  background: rgba(199,112,240,0.07);
+  background: rgba(199, 112, 240, 0.07);
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -1785,7 +1812,7 @@ button:focus {
 }
 
 .exp-metric-label {
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 0.8rem;
   line-height: 1.4;
 }
@@ -1799,7 +1826,7 @@ button:focus {
 
 .exp-tag {
   padding: 5px 12px;
-  border: 1px solid rgba(199,112,240,0.4);
+  border: 1px solid rgba(199, 112, 240, 0.4);
   border-radius: 999px;
   color: #e1b7f5;
   font-size: 0.8rem;
@@ -1815,7 +1842,7 @@ button:focus {
     flex-direction: row;
     overflow-x: auto;
     border-right: none;
-    border-bottom: 1px solid rgba(199,112,240,0.2);
+    border-bottom: 1px solid rgba(199, 112, 240, 0.2);
     padding: 0.5rem;
   }
   .exp-nav-btn {
@@ -1861,7 +1888,7 @@ button:focus {
 }
 
 .blog-list-header p {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 1rem;
   margin: 0;
 }
@@ -1877,21 +1904,21 @@ button:focus {
 .blog-filter-btn {
   padding: 6px 18px;
   border-radius: 999px;
-  border: 1px solid rgba(199,112,240,0.3);
+  border: 1px solid rgba(199, 112, 240, 0.3);
   background: transparent;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   font-size: 0.82rem;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .blog-filter-btn:hover {
-  border-color: rgba(199,112,240,0.6);
+  border-color: rgba(199, 112, 240, 0.6);
   color: white;
 }
 
 .blog-filter-btn.active {
-  background: rgba(199,112,240,0.15);
+  background: rgba(199, 112, 240, 0.15);
   border-color: #c770f0;
   color: #c770f0;
 }
@@ -1904,8 +1931,8 @@ button:focus {
 }
 
 .blog-article-item {
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(199,112,240,0.15);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(199, 112, 240, 0.15);
   border-radius: 12px;
   padding: 28px;
   cursor: pointer;
@@ -1954,17 +1981,17 @@ button:focus {
 }
 
 .blog-article-date {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 0.8rem;
 }
 
 .blog-article-dot {
-  color: rgba(255,255,255,0.25);
+  color: rgba(255, 255, 255, 0.25);
   font-size: 0.8rem;
 }
 
 .blog-article-read {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 0.8rem;
 }
 
@@ -1979,7 +2006,7 @@ button:focus {
 }
 
 .blog-article-excerpt {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 0.9rem;
   line-height: 1.65;
   margin: 0 0 16px;
@@ -1996,7 +2023,7 @@ button:focus {
 
 .blog-tag {
   padding: 3px 10px;
-  border: 1px solid rgba(199,112,240,0.3);
+  border: 1px solid rgba(199, 112, 240, 0.3);
   border-radius: 999px;
   color: #c770f0;
   font-size: 0.74rem;
@@ -2025,7 +2052,7 @@ button:focus {
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
   font-weight: 600;
   margin-bottom: 14px;
 }
@@ -2037,7 +2064,7 @@ button:focus {
 }
 
 .blog-toc-item {
-  border-left: 2px solid rgba(255,255,255,0.07);
+  border-left: 2px solid rgba(255, 255, 255, 0.07);
   padding: 5px 0 5px 14px;
   transition: border-color 0.2s;
 }
@@ -2047,7 +2074,7 @@ button:focus {
 }
 
 .blog-toc-link {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 0.8rem;
   line-height: 1.45;
   text-decoration: none;
@@ -2067,7 +2094,7 @@ button:focus {
 }
 
 .blog-toc-link:hover {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
 }
 
 /* Share bar */
@@ -2078,14 +2105,14 @@ button:focus {
   gap: 10px;
   margin-bottom: 40px;
   padding-bottom: 32px;
-  border-bottom: 1px solid rgba(199,112,240,0.12);
+  border-bottom: 1px solid rgba(199, 112, 240, 0.12);
 }
 
 .blog-share-label {
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
   font-weight: 600;
   margin-right: 4px;
 }
@@ -2094,9 +2121,9 @@ button:focus {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   background: transparent;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2115,9 +2142,9 @@ button:focus {
   gap: 6px;
   padding: 6px 14px;
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   background: transparent;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255, 255, 255, 0.55);
   font-size: 0.78rem;
   cursor: pointer;
   transition: all 0.2s;
@@ -2130,7 +2157,7 @@ button:focus {
 
 .blog-back-btn {
   background: none;
-  border: 1px solid rgba(199,112,240,0.35);
+  border: 1px solid rgba(199, 112, 240, 0.35);
   border-radius: 6px;
   color: #c770f0;
   padding: 6px 14px;
@@ -2140,7 +2167,7 @@ button:focus {
 }
 
 .blog-back-btn:hover {
-  background: rgba(199,112,240,0.1);
+  background: rgba(199, 112, 240, 0.1);
 }
 
 /* Post article */
@@ -2151,7 +2178,7 @@ button:focus {
 .blog-post-article-header {
   margin-bottom: 48px;
   padding-bottom: 32px;
-  border-bottom: 1px solid rgba(199,112,240,0.15);
+  border-bottom: 1px solid rgba(199, 112, 240, 0.15);
 }
 
 .blog-post-article-title {
@@ -2165,7 +2192,7 @@ button:focus {
 
 /* Post body — left-aligned, clean reading */
 .blog-post-body {
-  color: rgba(255,255,255,0.82);
+  color: rgba(255, 255, 255, 0.82);
   font-size: 1.05rem;
   line-height: 1.82;
   text-align: left;
@@ -2208,8 +2235,8 @@ button:focus {
 }
 
 .blog-post-body code {
-  background: rgba(199,112,240,0.1);
-  border: 1px solid rgba(199,112,240,0.18);
+  background: rgba(199, 112, 240, 0.1);
+  border: 1px solid rgba(199, 112, 240, 0.18);
   border-radius: 4px;
   padding: 2px 7px;
   font-size: 0.88em;
@@ -2219,7 +2246,7 @@ button:focus {
 
 .blog-post-body pre {
   background: #1a1025;
-  border: 1px solid rgba(199,112,240,0.18);
+  border: 1px solid rgba(199, 112, 240, 0.18);
   border-radius: 10px;
   padding: 22px 24px;
   overflow-x: auto;
@@ -2230,7 +2257,7 @@ button:focus {
   background: none;
   border: none;
   padding: 0;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 0.9rem;
   line-height: 1.65;
 }
@@ -2249,9 +2276,9 @@ button:focus {
   border-left: 3px solid #c770f0;
   margin: 2rem 0;
   padding: 14px 22px;
-  background: rgba(199,112,240,0.06);
+  background: rgba(199, 112, 240, 0.06);
   border-radius: 0 8px 8px 0;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255, 255, 255, 0.72);
   font-style: italic;
 }
 
@@ -2264,19 +2291,57 @@ button:focus {
   max-width: 100%;
   border-radius: 10px;
   margin: 1.5rem 0;
-  border: 1px solid rgba(199,112,240,0.15);
+  border: 1px solid rgba(199, 112, 240, 0.15);
 }
 
 .blog-post-body hr {
   border: none;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   margin: 2.5rem 0;
+}
+
+.mermaid-diagram {
+  position: relative;
+  margin: 1.75rem 0;
+  padding: 0;
+  overflow-x: auto;
+  cursor: zoom-in;
+  outline: none;
+}
+
+.mermaid-diagram:focus-visible {
+  box-shadow: 0 0 0 3px rgba(199, 112, 240, 0.45);
+}
+
+.mermaid-diagram > div {
+  min-width: max-content;
+}
+
+.mermaid-diagram svg {
+  display: block;
+  max-width: none;
+  margin: 0 auto;
+}
+
+.mermaid-lightbox-svg {
+  max-width: 90vw;
+  max-height: 88vh;
+  overflow: auto;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+}
+
+.mermaid-lightbox-svg svg {
+  display: block;
+  width: 90vw !important;
+  min-width: 0;
+  max-width: none;
+  height: auto;
 }
 
 /* Comments */
 .blog-comments-section {
   padding-top: 40px;
-  border-top: 1px solid rgba(199,112,240,0.15);
+  border-top: 1px solid rgba(199, 112, 240, 0.15);
 }
 
 .blog-comments-section h2 {
@@ -2287,7 +2352,7 @@ button:focus {
 }
 
 .blog-comments-hint {
-  color: rgba(255,255,255,0.4);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 0.85rem;
   margin-bottom: 24px;
 }
@@ -2299,8 +2364,8 @@ button:focus {
 
   .blog-toc {
     position: static;
-    background: rgba(199,112,240,0.05);
-    border: 1px solid rgba(199,112,240,0.15);
+    background: rgba(199, 112, 240, 0.05);
+    border: 1px solid rgba(199, 112, 240, 0.15);
     border-radius: 10px;
     padding: 20px 24px;
     margin-bottom: 32px;
@@ -2310,6 +2375,11 @@ button:focus {
 @media (max-width: 768px) {
   .blog-page-inner {
     padding: 40px 20px 60px;
+  }
+
+  .mermaid-lightbox-svg {
+    max-width: 94vw;
+    max-height: 84vh;
   }
 }
 
@@ -2326,10 +2396,14 @@ button:focus {
   align-items: center;
   justify-content: center;
   gap: 14px;
-  background: linear-gradient(90deg, rgba(15,30,20,0.97), rgba(10,35,20,0.97));
-  border-bottom: 1px solid rgba(34,197,94,0.3);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 30, 20, 0.97),
+    rgba(10, 35, 20, 0.97)
+  );
+  border-bottom: 1px solid rgba(34, 197, 94, 0.3);
   padding: 10px 24px;
-  animation: otw-slide-down 0.4s cubic-bezier(0.16,1,0.3,1);
+  animation: otw-slide-down 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   backdrop-filter: blur(8px);
 }
 
@@ -2338,13 +2412,25 @@ button:focus {
 }
 
 @keyframes otw-slide-down {
-  from { opacity: 0; transform: translateY(-100%); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes otw-slide-up {
-  from { opacity: 1; transform: translateY(0); }
-  to   { opacity: 0; transform: translateY(-100%); }
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
 }
 
 .otw-dot {
@@ -2357,12 +2443,17 @@ button:focus {
 }
 
 @keyframes otw-pulse {
-  0%, 100% { box-shadow: 0 0 5px rgba(34,197,94,0.6); }
-  50%       { box-shadow: 0 0 10px rgba(34,197,94,1); }
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(34, 197, 94, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 1);
+  }
 }
 
 .otw-banner-text {
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.85rem;
 }
 
@@ -2389,7 +2480,7 @@ button:focus {
   right: 16px;
   background: none;
   border: none;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
   font-size: 0.7rem;
   cursor: pointer;
   padding: 0;
@@ -2398,5 +2489,5 @@ button:focus {
 }
 
 .otw-close:hover {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
