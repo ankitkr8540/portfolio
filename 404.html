@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ankit Kumar | Machine Learning Engineer</title>
+    <script>
+      // GitHub Pages SPA redirect shim.
+      // When GitHub Pages 404s on a deep path (e.g. /portfolio/blogs/foo),
+      // it serves this file. We encode the path into the query string and
+      // redirect to the root, where index.html restores it.
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 2).join('/') +
+        '/?p=' + encodeURIComponent(l.pathname.slice(1) + l.search) +
+        (l.hash ? '&h=' + encodeURIComponent(l.hash) : '')
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

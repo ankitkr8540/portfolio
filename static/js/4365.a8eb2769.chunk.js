@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[4365],{24365:(e,r,o)=>{o.d(r,{createTreeViewServices:()=>s.I});var s=o(70556);o(98667)}}]);
