@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[9868],{19868:(e,r,a)=>{a.d(r,{createRadarServices:()=>o.f});var o=a(20645);a(98667)}}]);
